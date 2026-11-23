@@ -146,7 +146,7 @@ window.RAV_CONCEPTS = [
     name: "Contents",
     tagline: "Case Study, evolved. Every visitor finds their page in the first screen.",
     description:
-      "Built on Case Study (08). The hero is a catalog contents page: Shop new, Pre-owned, Sell, Listen and Install, each with its own sub-links. Press strip up front, a shop mega menu and search, a pre-owned ledger, a StereoBuyers handoff, a booking picker, and a job dock on phones.",
+      "Built on Case Study (08). The hero is a catalog contents page: Shop new, Pre-owned, Sell, Listen and Install, each with its own sub-links. Type after the RCA mark, the McIntosh MC240 manual and Telefunken tube boxes; gear shot in the room under warm light. Press up front, shop menu and search, a pre-owned ledger, a StereoBuyers handoff and a job dock on phones.",
     tags: ["Mid-century", "Light", "Wayfinding", "Press up front"],
     swatches: ["#f3eee4", "#171411", "#8f5a2f", "#66693a", "#d6582a"],
     status: "draft",
@@ -159,7 +159,7 @@ window.RAV_CONCEPTS = [
     name: "Walnut & Glass",
     tagline: "Edge to edge, mid-century, and four doors in the first screen.",
     description:
-      "Reference and Atelier's full-bleed photography with The Room's mid-century warmth. The first screen is four photo doors: Listen, Buy, Sell and Install. The RAV logo box frames labels, photos, buttons and press nameplates. Marantz/McIntosh-style faceplate caps, a glass header whose input lamps light up as you scroll, and a StereoBuyers handoff.",
+      "Reference and Atelier's full-bleed photography with The Room's mid-century warmth. The first screen is four photo doors: Listen, Buy, Sell and Install. The RAV logo box frames labels, photos, buttons and press nameplates. Marantz faceplate legends, RCA-weight labels, McIntosh-manual specs and Telefunken box labels, a glass header whose input lamps light up as you scroll, and gear shot in the room under warm light.",
     tags: ["Mid-century", "Edge to edge", "Logo box system", "Wayfinding"],
     swatches: ["#efe7d8", "#0d0c0b", "#5a3820", "#cdb68a", "#6cc8e6"],
     status: "draft",

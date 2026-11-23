@@ -7,7 +7,7 @@
   <meta name="description" content="Shop new and pre-owned hi-fi, sell your gear through StereoBuyers, book the listening room at the Brooklyn Navy Yard, or have a system installed at home. Since 1999." />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Schibsted+Grotesk:ital,wght@0,400..900;1,400..900&family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Schibsted+Grotesk:ital,wght@0,400..900;1,400..900&family=Archivo:ital,wdth,wght@0,62..125,700..900;1,62..125,700..900&family=Courier+Prime:ital,wght@0,400;0,700;1,400&family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
@@ -72,10 +72,10 @@
         <li><a href="#finder" class="tlink">Not sure? Take the 3-question finder</a></li>
       </ul>
     </div>
-    <a href="#shop" class="mega-feat g-olive">
+    <a href="#shop" class="mega-feat">
       <span class="meta">New in the room</span>
-      <img src="img/g-shindo.jpg" alt="" />
-      <b>Shindo WE 300B Single Limited</b>
+      <img src="img/p-leben.jpg" alt="" class="warm" />
+      <b>Leben CS-300XO integrated</b>
       <span>Hear it this week →</span>
     </a>
   </div>
@@ -102,14 +102,15 @@
   <!-- HERO: the catalog contents page -->
   <section class="hero" id="top">
     <figure class="hero-plate">
-      <img src="img/hero-room.jpg" alt="The Resolution listening room at Building 77: walnut speakers and McIntosh amplifiers on timber floors beside a stone wall." />
+      <img class="warm" src="img/hero-room.jpg" alt="The Resolution listening room at Building 77: walnut speakers and McIntosh amplifiers on timber floors beside a stone wall." />
       <figcaption class="meta">Plate 1. The listening room, Brooklyn Navy Yard</figcaption>
     </figure>
 
     <div class="contents">
+      <!-- Cover band after the McIntosh MC240 owner's manual: black bar, spaced caps, a red italic model number -->
       <div class="contents-top">
-        <span class="meta">Resolution A/V · Catalog</span>
-        <span class="contents-no">Since 1999</span>
+        <span class="manual-k">Catalog &amp; owner’s guide</span>
+        <span class="model">RAV 77</span>
       </div>
       <h1>Built for <em>listening.</em></h1>
       <p class="contents-lede">New and pre-owned hi-fi, a room to hear it in, and people who’ll set it up at home. What brings you in?</p>
@@ -178,26 +179,23 @@
       <h2>Shop by what<br />you’re <em>after.</em></h2>
       <p>Heritage makers chosen for how they sound in a real room. Every piece on the site can be heard at the Navy Yard before you buy.</p>
     </header>
+    <!-- Gear photographed in the room, under warm light. Labels after Telefunken tube boxes. -->
     <div class="cats">
-      <a href="#" class="cat g-olive">
-        <span class="cat-top"><b>Amplifiers</b><i class="meta">112 pieces</i></span>
-        <img src="img/g-shindo.jpg" alt="Shindo WE 300B tube amplifier" loading="lazy" />
-        <span class="cat-makers">Shindo · Leben · McIntosh · Nagra</span>
+      <a href="#" class="cat">
+        <img class="warm" src="img/p-leben.jpg" alt="Leben CS-300XO tube integrated amplifier on a walnut shelf" loading="lazy" />
+        <span class="tube-label"><b>Amplifiers</b><i>112 pieces</i><span>Shindo · Leben · McIntosh · Nagra</span></span>
       </a>
-      <a href="#" class="cat g-teak">
-        <span class="cat-top"><b>Turntables</b><i class="meta">64 pieces</i></span>
-        <img src="img/g-brinkmann.jpg" alt="Brinkmann Balance turntable" loading="lazy" />
-        <span class="cat-makers">Brinkmann · Kuzma · SME</span>
+      <a href="#" class="cat">
+        <img class="warm" src="img/f-nagra-anniv.jpg" alt="Nagra Reference Anniversary turntable" loading="lazy" />
+        <span class="tube-label"><b>Turntables</b><i>64 pieces</i><span>Brinkmann · Nagra · SME</span></span>
       </a>
-      <a href="#" class="cat g-stone">
-        <span class="cat-top"><b>Loudspeakers</b><i class="meta">58 pieces</i></span>
-        <img src="img/f-ymir.jpg" alt="Ø Audio Ymir loudspeaker" loading="lazy" />
-        <span class="cat-makers">DeVore · Rockport · Ø Audio</span>
+      <a href="#" class="cat">
+        <img class="warm" src="img/f-devore.jpg" alt="DeVore Fidelity O/Reference loudspeakers in mahogany" loading="lazy" />
+        <span class="tube-label"><b>Loudspeakers</b><i>58 pieces</i><span>DeVore · Rockport · Ø Audio</span></span>
       </a>
-      <a href="#" class="cat g-ink">
-        <span class="cat-top"><b>Digital</b><i class="meta">37 pieces</i></span>
-        <img src="img/f-dcs.jpg" alt="dCS digital source components" loading="lazy" />
-        <span class="cat-makers">dCS · Nagra · Lumin</span>
+      <a href="#" class="cat">
+        <img class="warm" src="img/f-dcs.jpg" alt="dCS Vivaldi APEX DAC" loading="lazy" />
+        <span class="tube-label"><b>Digital</b><i>37 pieces</i><span>dCS · Nagra · Lumin</span></span>
       </a>
     </div>
     <div class="makers" aria-label="Shop by maker">
@@ -297,7 +295,7 @@
       </fieldset>
     </form>
     <output class="result" id="result" for="finder-form" aria-live="polite">
-      <div class="result-img"><img id="rImg" src="img/g-shindo.jpg" alt="" /></div>
+      <div class="result-img"><img id="rImg" class="warm" src="img/p-leben.jpg" alt="" /></div>
       <div class="result-body">
         <p class="meta">We’d start you with</p>
         <h3 id="rName">The Parlor</h3>
@@ -318,7 +316,7 @@
   <!-- VISIT & LISTEN -->
   <section class="visit" id="visit">
     <figure class="visit-img">
-      <img src="img/crew-couch.jpg" alt="The Resolution team on the orange leather couch in front of the record wall." loading="lazy" />
+      <img class="warm" src="img/crew-couch.jpg" alt="The Resolution team on the orange leather couch in front of the record wall." loading="lazy" />
       <figcaption class="meta">Plate 2. The crew, on the couch you’ll be sitting on</figcaption>
     </figure>
     <div class="visit-copy">
@@ -356,7 +354,7 @@
   <!-- INSTALL -->
   <section class="install" id="install">
     <div class="install-hero">
-      <img src="img/home-loft.jpg" alt="A loft living room with a green velvet sofa, walnut coffee table, brass chandelier and built-in shelving with speakers." loading="lazy" />
+      <img class="warm" src="img/home-loft.jpg" alt="A loft living room with a green velvet sofa, walnut coffee table, brass chandelier and built-in shelving with speakers." loading="lazy" />
       <div class="install-card">
         <p class="sec-no"><span class="box">05</span><span class="meta">Install at home</span></p>
         <h2>The music moves<br /><em>through the house.</em></h2>

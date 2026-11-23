@@ -60,22 +60,22 @@
   // System finder. Pairings and totals are illustrative, built from list prices.
   var systems = {
     parlor: {
-      name: "The Parlor", img: "img/g-shindo.jpg", price: "From $50,185",
+      name: "The Parlor", img: "img/p-leben.jpg", price: "From $50,185",
       desc: "A small tube amplifier and efficient Brooklyn-made speakers. Intimate, vivid, and happy at dinner-party volume.",
       list: [["Brinkmann Bardo", "Turntable"], ["Leben CS-300XO", "Tube integrated"], ["DeVore Fidelity O/Bronze", "Loudspeakers"]]
     },
     library: {
-      name: "The Library", img: "img/p-mcintosh.jpg", price: "From $94,500",
+      name: "The Library", img: "img/f-dcs.jpg", price: "From $94,500",
       desc: "Records and streaming in equal measure, with blue meters glowing on the shelf and power to spare for a big room.",
       list: [["dCS Rossini APEX", "DAC & streamer"], ["McIntosh MA2375", "Tube integrated"], ["Ø Audio Verdande", "Loudspeakers"]]
     },
     studio: {
-      name: "The Studio", img: "img/g-phasemation.jpg", price: "From $356,765",
+      name: "The Studio", img: "img/f-devore.jpg", price: "From $356,765",
       desc: "Single-ended Western Electric 211s into high-efficiency speakers. Scale, texture and a sense of the players in the room.",
       list: [["Brinkmann Balance", "Turntable"], ["Phasemation MA-5000", "Monaural amplifiers"], ["DeVore Fidelity O/Reference", "Loudspeakers"]]
     },
     precision: {
-      name: "The Reference", img: "img/g-brinkmann.jpg", price: "From $569,990",
+      name: "The Reference", img: "img/f-nagra-anniv.jpg", price: "From $569,990",
       desc: "What we play when someone asks what’s possible. German analog, Swiss electronics, Maine loudspeakers, and a room built around them.",
       list: [["Brinkmann Balance", "Turntable"], ["Nagra Reference", "Preamp & mono amps"], ["Rockport Technologies Lyra", "Loudspeakers"]]
     }
