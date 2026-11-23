@@ -120,4 +120,16 @@ window.RAV_CONCEPTS = [
     status: "draft",
     updated: "2026-11-22",
   },
+  {
+    id: "11",
+    slug: "11-walnut-and-glass",
+    name: "Walnut & Glass",
+    tagline: "Edge to edge, mid-century, and four doors in the first screen.",
+    description:
+      "Reference and Atelier's full-bleed photography with The Room's mid-century warmth. The first screen is four photo doors: Listen, Buy, Sell and Install. The RAV logo box frames labels, photos, buttons and press nameplates. Marantz/McIntosh-style faceplate caps, a glass header whose input lamps light up as you scroll, and a StereoBuyers handoff.",
+    tags: ["Mid-century", "Edge to edge", "Logo box system", "Wayfinding"],
+    swatches: ["#efe7d8", "#0d0c0b", "#5a3820", "#cdb68a", "#6cc8e6"],
+    status: "draft",
+    updated: "2026-11-22",
+  },
 ];
