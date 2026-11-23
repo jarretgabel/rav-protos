@@ -22,15 +22,17 @@
     <section class="hub-intro">
       <p class="mono eyebrow">Concept index</p>
       <h1>Directions for the next Resolution&nbsp;AV.</h1>
-      <p class="lede">Every concept here is a full homepage built around the same brand, voice and content. The content is placeholder copy based on resolutionavnyc.com. Open a concept to try it.</p>
+      <p class="lede">Every concept here is a full homepage built around the same brand, voice and content. They're grouped by round, newest first, so you can see how each round answers the feedback on the last. The content is placeholder copy based on resolutionavnyc.com.</p>
       <dl class="hub-stats mono">
+        <div><dt>Rounds</dt><dd id="rounds">00</dd></div>
         <div><dt>Concepts</dt><dd id="count">00</dd></div>
         <div><dt>Brand base</dt><dd>Resolution theme</dd></div>
         <div><dt>Voice</dt><dd>voice-and-vibe.md</dd></div>
       </dl>
     </section>
 
-    <section class="grid" id="grid" aria-label="Concepts"></section>
+    <nav class="round-nav mono" id="round-nav" aria-label="Rounds"></nav>
+    <div id="rounds-list"></div>
   </main>
 
   <footer class="hub-foot mono">
@@ -41,11 +43,15 @@
   <script src="concepts/concepts.js"></script>
   <script>
     (function () {
-      var grid = document.getElementById("grid");
       var list = window.RAV_CONCEPTS || [];
-      document.getElementById("count").textContent = String(list.length).padStart(2, "0");
+      var rounds = (window.RAV_ROUNDS || []).slice().sort(function (a, b) { return b.id - a.id; });
+      var pad = function (n) { return String(n).padStart(2, "0"); };
+      var months = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"];
+      var fmt = function (d) { var p = d.split("-"); return months[+p[1] - 1] + " " + (+p[2]) + ", " + p[0]; };
+      document.getElementById("count").textContent = pad(list.length);
+      document.getElementById("rounds").textContent = pad(rounds.length);
 
-      list.forEach(function (c) {
+      function card(c) {
         var href = "concepts/" + c.slug + "/index.html";
         var a = document.createElement("a");
         a.className = "card";
@@ -65,18 +71,37 @@
               '<ul class="tags mono">' + c.tags.map(function (t) { return "<li>" + t + "</li>"; }).join("") + "</ul>" +
             "</div>" +
           "</div>";
-        grid.appendChild(a);
-      });
-
-      // Fill the current row with open slots; if the row is full, show one "next" slot.
-      var rem = list.length % 3;
-      var total = list.length + (rem === 0 ? 1 : 3 - rem);
-      for (var i = list.length + 1; i <= total; i++) {
-        var slot = document.createElement("div");
-        slot.className = "card card-empty";
-        slot.innerHTML = '<span class="mono">Concept ' + String(i).padStart(2, "0") + '</span><p>Slot open</p>';
-        grid.appendChild(slot);
+        return a;
       }
+
+      var wrap = document.getElementById("rounds-list");
+      var nav = document.getElementById("round-nav");
+      rounds.forEach(function (r, i) {
+        var items = list.filter(function (c) { return c.round === r.id; });
+        if (!items.length) return;
+        var sec = document.createElement("section");
+        sec.className = "round" + (i === 0 ? " round-latest" : "");
+        sec.id = "round-" + r.id;
+        sec.setAttribute("aria-labelledby", "round-" + r.id + "-h");
+        sec.innerHTML =
+          '<header class="round-head">' +
+            '<p class="round-no mono">Round ' + pad(r.id) + (i === 0 ? ' <span class="round-flag">Latest</span>' : "") + "</p>" +
+            '<h2 id="round-' + r.id + '-h">' + r.name + "</h2>" +
+            '<p class="round-note">' + r.note + "</p>" +
+            '<p class="round-meta mono">' + fmt(r.date) + " · " + items.length + (items.length === 1 ? " concept" : " concepts") + " · " +
+              items[0].id + (items.length > 1 ? "–" + items[items.length - 1].id : "") + "</p>" +
+          "</header>";
+        var grid = document.createElement("div");
+        grid.className = "grid";
+        items.forEach(function (c) { grid.appendChild(card(c)); });
+        sec.appendChild(grid);
+        wrap.appendChild(sec);
+
+        var link = document.createElement("a");
+        link.href = "#round-" + r.id;
+        link.innerHTML = "Round " + pad(r.id) + " <span>" + r.name + "</span>";
+        nav.appendChild(link);
+      });
     })();
   </script>
 </body>

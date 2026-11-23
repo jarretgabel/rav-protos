@@ -1,7 +1,30 @@
 // Concept registry — add a new entry here and it appears on the hub homepage.
+// Each concept belongs to a round; the hub groups concepts by round, newest round first.
+window.RAV_ROUNDS = [
+  {
+    id: 1,
+    name: "Opening directions",
+    date: "2026-11-16",
+    note: "Five broad directions for the brand, from warehouse-dark to gallery-light.",
+  },
+  {
+    id: 2,
+    name: "Mid-century, edge to edge",
+    date: "2026-11-18",
+    note: "After round 1: a mid-century feel, edge-to-edge layouts, press up front, the logo box as a recurring motif, and clear paths to Listen, Buy, Sell and Install.",
+  },
+  {
+    id: 3,
+    name: "Wayfinding first",
+    date: "2026-11-22",
+    note: "After round 2: two focused concepts. One evolves Case Study; one combines Reference and Atelier's edge-to-edge look with The Room's mid-century warmth. Both put every visitor's path in the first screen.",
+  },
+];
+
 window.RAV_CONCEPTS = [
   {
     id: "01",
+    round: 1,
     slug: "01-building-77",
     name: "Building 77",
     tagline: "Warm vinyl. Raw warehouse. Your ears decide.",
@@ -14,6 +37,7 @@ window.RAV_CONCEPTS = [
   },
   {
     id: "02",
+    round: 1,
     slug: "02-the-room",
     name: "The Room",
     tagline: "A record-shop price list, with a listening room attached.",
@@ -26,6 +50,7 @@ window.RAV_CONCEPTS = [
   },
   {
     id: "03",
+    round: 1,
     slug: "03-reference",
     name: "Reference",
     tagline: "Listen first. Quiet luxury with warehouse bones.",
@@ -38,6 +63,7 @@ window.RAV_CONCEPTS = [
   },
   {
     id: "04",
+    round: 1,
     slug: "04-atelier",
     name: "Atelier",
     tagline: "The art of listening. A vault and a gallery.",
@@ -50,6 +76,7 @@ window.RAV_CONCEPTS = [
   },
   {
     id: "05",
+    round: 1,
     slug: "05-maison",
     name: "Maison",
     tagline: "Made to be heard. Light, architectural, gallery-quiet.",
@@ -62,6 +89,7 @@ window.RAV_CONCEPTS = [
   },
   {
     id: "06",
+    round: 2,
     slug: "06-faceplate",
     name: "Faceplate",
     tagline: "Hear the difference. The logo box becomes the system.",
@@ -74,6 +102,7 @@ window.RAV_CONCEPTS = [
   },
   {
     id: "07",
+    round: 2,
     slug: "07-after-hours",
     name: "After Hours",
     tagline: "Pull up a chair. The listening room at 9pm.",
@@ -86,6 +115,7 @@ window.RAV_CONCEPTS = [
   },
   {
     id: "08",
+    round: 2,
     slug: "08-case-study",
     name: "Case Study",
     tagline: "Built for listening. Daylight mid-century, catalog-grade.",
@@ -98,6 +128,7 @@ window.RAV_CONCEPTS = [
   },
   {
     id: "09",
+    round: 2,
     slug: "09-late-set",
     name: "Late Set",
     tagline: "Turn the lights down. The darkest, moodiest direction.",
@@ -110,6 +141,7 @@ window.RAV_CONCEPTS = [
   },
   {
     id: "10",
+    round: 3,
     slug: "10-contents",
     name: "Contents",
     tagline: "Case Study, evolved. Every visitor finds their page in the first screen.",
@@ -122,6 +154,7 @@ window.RAV_CONCEPTS = [
   },
   {
     id: "11",
+    round: 3,
     slug: "11-walnut-and-glass",
     name: "Walnut & Glass",
     tagline: "Edge to edge, mid-century, and four doors in the first screen.",
