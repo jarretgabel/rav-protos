@@ -1,0 +1,511 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Resolution Audio Video NYC: Hi-Fi, Pre-Owned & Listening Room, Brooklyn</title>
+  <meta name="description" content="Brooklyn hi-fi since 1999. New and pre-owned high-end audio, a listening room in the Brooklyn Navy Yard, and we buy used gear." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@62..125,300..900&family=Instrument+Serif:ital@0;1&family=JetBrains+Mono:wght@400;500&family=Varela+Round&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <!-- Gear silhouettes used as photo placeholders -->
+  <svg width="0" height="0" style="position:absolute" aria-hidden="true">
+    <symbol id="g-amp" viewBox="0 0 200 120">
+      <rect x="10" y="30" width="180" height="70" rx="3" />
+      <rect x="22" y="42" width="44" height="26" rx="2" class="g-glow" />
+      <rect x="74" y="42" width="44" height="26" rx="2" class="g-glow" />
+      <circle cx="146" cy="55" r="11" /><circle cx="174" cy="55" r="7" />
+      <line x1="22" y1="84" x2="178" y2="84" />
+      <rect x="20" y="100" width="10" height="5" /><rect x="170" y="100" width="10" height="5" />
+    </symbol>
+    <symbol id="g-tube" viewBox="0 0 200 120">
+      <rect x="20" y="70" width="160" height="34" rx="2" />
+      <path d="M44 70V40c0-10 16-10 16 0v30" class="g-glow" /><path d="M74 70V34c0-12 18-12 18 0v36" class="g-glow" />
+      <path d="M108 70V34c0-12 18-12 18 0v36" class="g-glow" /><path d="M140 70V40c0-10 16-10 16 0v30" class="g-glow" />
+      <rect x="160" y="50" width="16" height="20" />
+    </symbol>
+    <symbol id="g-table" viewBox="0 0 200 120">
+      <rect x="14" y="40" width="172" height="58" rx="3" />
+      <ellipse cx="86" cy="58" rx="58" ry="14" class="g-glow" />
+      <ellipse cx="86" cy="58" rx="8" ry="2.5" />
+      <path d="M164 46v10l-30 26" /><circle cx="164" cy="46" r="5" />
+      <rect x="22" y="98" width="10" height="6" /><rect x="168" y="98" width="10" height="6" />
+    </symbol>
+    <symbol id="g-speaker" viewBox="0 0 200 120">
+      <rect x="62" y="6" width="76" height="110" rx="3" />
+      <circle cx="100" cy="28" r="9" class="g-glow" />
+      <circle cx="100" cy="74" r="28" /><circle cx="100" cy="74" r="10" class="g-glow" />
+    </symbol>
+    <symbol id="g-deck" viewBox="0 0 200 120">
+      <rect x="10" y="36" width="180" height="58" rx="3" />
+      <rect x="22" y="46" width="76" height="38" rx="2" class="g-glow" />
+      <circle cx="44" cy="65" r="8" /><circle cx="76" cy="65" r="8" />
+      <rect x="110" y="48" width="66" height="10" rx="1" />
+      <rect x="110" y="68" width="10" height="10" /><rect x="124" y="68" width="10" height="10" /><rect x="138" y="68" width="10" height="10" /><rect x="152" y="68" width="10" height="10" />
+    </symbol>
+  </svg>
+
+  <div class="grain" aria-hidden="true"></div>
+
+  <!-- Utility bar -->
+  <div class="utility mono">
+    <span><i class="dot"></i>Listening room<span class="hide-xs"> open</span> by appointment</span>
+    <span class="hide-sm">63 Flushing Ave · Building 77 · Suite 502 · Brooklyn Navy Yard</span>
+    <a href="tel:17187888362">718-788-8362</a>
+  </div>
+
+  <!-- Nav -->
+  <header class="nav" id="nav">
+    <a class="logo" href="#" aria-label="Resolution Audio Video NYC home">
+      <span class="logo-disc" aria-hidden="true"></span>
+      <span class="logo-word">resolution<span>audio video nyc</span></span>
+    </a>
+    <nav class="nav-links" aria-label="Primary">
+      <a href="#shop">Hi-Fi</a>
+      <a href="#dock">Pre-Owned</a>
+      <a href="#sell">Sell Your Gear</a>
+      <a href="#room">Listening Room</a>
+      <a href="#home">Smart Home</a>
+      <a href="#journal">Journal</a>
+    </nav>
+    <div class="nav-actions">
+      <button class="icon-btn" aria-label="Search"><svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="7"/><path d="m20 20-4-4"/></svg></button>
+      <button class="icon-btn" aria-label="Cart"><svg viewBox="0 0 24 24"><path d="M5 8h14l-1 12H6z"/><path d="M9 8V6a3 3 0 0 1 6 0v2"/></svg><span class="cart-count">0</span></button>
+      <a class="btn btn-sm btn-amber" href="#room">Book a listen</a>
+      <button class="icon-btn menu-btn" id="menuBtn" aria-label="Menu" aria-expanded="false" aria-controls="drawer"><svg viewBox="0 0 24 24"><path d="M4 8h16M4 16h16"/></svg></button>
+    </div>
+  </header>
+
+  <div class="drawer" id="drawer" hidden>
+    <nav aria-label="Mobile">
+      <a href="#shop"><span class="mono">01</span>Hi-Fi</a>
+      <a href="#dock"><span class="mono">02</span>Pre-Owned</a>
+      <a href="#sell"><span class="mono">03</span>Sell Your Gear</a>
+      <a href="#room"><span class="mono">04</span>Listening Room</a>
+      <a href="#home"><span class="mono">05</span>Smart Home</a>
+      <a href="#journal"><span class="mono">06</span>Journal</a>
+    </nav>
+    <div class="drawer-foot mono"><a href="tel:17187888362">718-788-8362</a><span>Bldg 77 · Brooklyn Navy Yard</span></div>
+  </div>
+
+  <main>
+    <!-- HERO -->
+    <section class="hero">
+      <div class="hero-light" aria-hidden="true"></div>
+      <div class="hero-grid">
+        <div class="hero-copy reveal">
+          <p class="mono eyebrow"><span>Brooklyn hi-fi</span><span>Since 1999</span></p>
+          <h1 class="display">
+            <span class="line">Your ears</span>
+            <span class="line serif">decide.</span>
+          </h1>
+          <p class="hero-lede">New and pre-owned high-end audio, a listening room in the Brooklyn Navy Yard, and a team that has bought and sold great gear for over 25 years. Bring a record you know by heart. If you don’t hear the difference, don’t buy it.</p>
+          <div class="hero-ctas">
+            <a class="btn btn-amber" href="#room">Plan a listening-room visit <span aria-hidden="true">→</span></a>
+            <a class="btn btn-ghost" href="#sell">Sell or trade your gear</a>
+          </div>
+        </div>
+
+        <div class="deck reveal" aria-label="Turntable">
+          <div class="plinth">
+            <div class="platter">
+              <div class="record" id="record">
+                <div class="record-label">
+                  <span class="rl-top">Resolution</span>
+                  <span class="rl-mid">Side A</span>
+                  <span class="rl-bot">33⅓ · BK-NY</span>
+                </div>
+              </div>
+            </div>
+            <div class="tonearm" id="tonearm"><span class="arm"></span><span class="headshell"></span></div>
+            <button class="deck-switch mono" id="deckSwitch" aria-pressed="true">
+              <i></i><span>33⅓</span>
+            </button>
+            <span class="plinth-badge mono">Bldg 77 · Ste 502</span>
+          </div>
+          <div class="now-playing mono">
+            <span class="np-label">Now spinning in the room</span>
+            <span class="np-track">Pete Rock &amp; C.L. Smooth: <em>Mecca and the Soul Brother</em></span>
+            <span class="np-chain">Nagra Classic Preamp → McIntosh MC275 → DeVore O/96</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="hero-foot mono">
+        <span>01 / Hi-fi</span><span>02 / Pre-owned</span><span>03 / We buy</span><span>04 / Smart home</span>
+        <span class="scroll-cue">Drop the needle ↓</span>
+      </div>
+    </section>
+
+    <!-- Brand marquee -->
+    <div class="marquee" aria-label="Brands we carry and buy">
+      <div class="marquee-track">
+        <span>Nagra</span><b>◆</b><span>DeVore Fidelity</span><b>◆</b><span>dCS</span><b>◆</b><span>McIntosh</span><b>◆</b><span>Shindo</span><b>◆</b><span>Accuphase</span><b>◆</b><span>Marantz</span><b>◆</b><span>Thorens</span><b>◆</b><span>Ø Audio</span><b>◆</b><span>Fisher</span><b>◆</b><span>Nakamichi</span><b>◆</b>
+        <span aria-hidden="true">Nagra</span><b>◆</b><span aria-hidden="true">DeVore Fidelity</span><b>◆</b><span aria-hidden="true">dCS</span><b>◆</b><span aria-hidden="true">McIntosh</span><b>◆</b><span aria-hidden="true">Shindo</span><b>◆</b><span aria-hidden="true">Accuphase</span><b>◆</b><span aria-hidden="true">Marantz</span><b>◆</b><span aria-hidden="true">Thorens</span><b>◆</b><span aria-hidden="true">Ø Audio</span><b>◆</b><span aria-hidden="true">Fisher</span><b>◆</b><span aria-hidden="true">Nakamichi</span><b>◆</b>
+      </div>
+    </div>
+
+    <!-- TRACKLIST: ways in -->
+    <section class="tracklist section" id="shop">
+      <div class="section-head reveal">
+        <p class="mono eyebrow"><span>Tracklist</span><span>Five ways in</span></p>
+        <h2 class="h2">Whichever door you walk through, the goal is the same: <em class="serif">a little more joy at home.</em></h2>
+      </div>
+
+      <ol class="tracks">
+        <li class="track reveal">
+          <a href="#room">
+            <span class="t-num mono">A1</span>
+            <span class="t-title">The Listening Room</span>
+            <span class="t-desc">Sink into the couch and hear a few systems side by side. By appointment, so the room is yours.</span>
+            <span class="t-time mono">Navy Yard</span>
+            <span class="t-arrow" aria-hidden="true">→</span>
+          </a>
+        </li>
+        <li class="track reveal">
+          <a href="#shop">
+            <span class="t-num mono">A2</span>
+            <span class="t-title">New Hi-Fi</span>
+            <span class="t-desc">Heritage makers like Nagra, DeVore Fidelity, dCS and McIntosh, chosen for how they sound in a real room.</span>
+            <span class="t-time mono">Shop new</span>
+            <span class="t-arrow" aria-hidden="true">→</span>
+          </a>
+        </li>
+        <li class="track reveal">
+          <a href="#dock">
+            <span class="t-num mono">A3</span>
+            <span class="t-title">Pre-Owned &amp; Vintage</span>
+            <span class="t-desc">Gear with history and a next chapter. Checked on our bench and packed like it matters, because it does.</span>
+            <span class="t-time mono">Shop used</span>
+            <span class="t-arrow" aria-hidden="true">→</span>
+          </a>
+        </li>
+        <li class="track reveal">
+          <a href="#sell">
+            <span class="t-num mono">A4</span>
+            <span class="t-title">We Buy Gear</span>
+            <span class="t-desc">Through StereoBuyers since 1999. One piece or a whole collection, tell us what you have.</span>
+            <span class="t-time mono">Get a quote</span>
+            <span class="t-arrow" aria-hidden="true">→</span>
+          </a>
+        </li>
+        <li class="track reveal">
+          <a href="#home">
+            <span class="t-num mono">B1</span>
+            <span class="t-title">Smart Home</span>
+            <span class="t-desc">Music, movies, lighting, shades and networks for brownstones, townhouses and lofts, hidden in the walls and simple to use.</span>
+            <span class="t-time mono">Since 2009</span>
+            <span class="t-arrow" aria-hidden="true">→</span>
+          </a>
+        </li>
+      </ol>
+    </section>
+
+    <!-- OFF THE DOCK: pre-owned inventory -->
+    <section class="dock section" id="dock">
+      <div class="dock-head reveal">
+        <div>
+          <p class="mono eyebrow"><span>Off the loading dock</span><span>Updated weekly</span></p>
+          <h2 class="h2 condensed">Just in.</h2>
+        </div>
+        <p class="dock-intro">Every week, gear comes through the freight elevator from collectors, estates and upgraders. Each piece gets checked on our bench before it goes on the floor. Here’s what’s on the shelves right now.</p>
+      </div>
+
+      <div class="dock-filters mono" role="tablist" aria-label="Filter inventory">
+        <button class="chip is-on" data-filter="all">All</button>
+        <button class="chip" data-filter="amp">Amplification</button>
+        <button class="chip" data-filter="source">Sources</button>
+        <button class="chip" data-filter="speaker">Speakers</button>
+        <button class="chip" data-filter="vintage">Vintage</button>
+      </div>
+
+      <div class="crates" id="crates">
+        <article class="crate reveal" data-cat="amp vintage">
+          <div class="crate-photo"><svg><use href="#g-tube"/></svg><span class="crate-status mono">In the room</span></div>
+          <div class="crate-tag">
+            <div class="ct-row mono"><span>RAV-77-0412</span><span>Grade A−</span></div>
+            <p class="ct-brand">McIntosh</p>
+            <h3 class="ct-model">MC275 Tube Power Amplifier</h3>
+            <div class="ct-row ct-meta mono"><span>Mk VI · 2012</span><span>Tested</span></div>
+            <div class="ct-price"><span>$6,450</span><a href="#" class="ct-link">View →</a></div>
+          </div>
+        </article>
+
+        <article class="crate reveal" data-cat="amp vintage">
+          <div class="crate-photo"><svg><use href="#g-amp"/></svg><span class="crate-status mono amber">Just in</span></div>
+          <div class="crate-tag">
+            <div class="ct-row mono"><span>RAV-77-0409</span><span>Grade B+</span></div>
+            <p class="ct-brand">Marantz</p>
+            <h3 class="ct-model">2270 Stereophonic Receiver</h3>
+            <div class="ct-row ct-meta mono"><span>1972 · Walnut case</span><span>Serviced</span></div>
+            <div class="ct-price"><span>$2,195</span><a href="#" class="ct-link">View →</a></div>
+          </div>
+        </article>
+
+        <article class="crate reveal" data-cat="source vintage">
+          <div class="crate-photo"><svg><use href="#g-table"/></svg><span class="crate-status mono">Tested</span></div>
+          <div class="crate-tag">
+            <div class="ct-row mono"><span>RAV-77-0398</span><span>Grade A</span></div>
+            <p class="ct-brand">Thorens</p>
+            <h3 class="ct-model">TD 124 Turntable, Custom Plinth</h3>
+            <div class="ct-row ct-meta mono"><span>1960 · SME 3009</span><span>Restored</span></div>
+            <div class="ct-price"><span>$4,800</span><a href="#" class="ct-link">View →</a></div>
+          </div>
+        </article>
+
+        <article class="crate reveal" data-cat="speaker">
+          <div class="crate-photo"><svg><use href="#g-speaker"/></svg><span class="crate-status mono">In the room</span></div>
+          <div class="crate-tag">
+            <div class="ct-row mono"><span>RAV-77-0401</span><span>Grade A</span></div>
+            <p class="ct-brand">DeVore Fidelity</p>
+            <h3 class="ct-model">Orangutan O/96 Loudspeakers</h3>
+            <div class="ct-row ct-meta mono"><span>Pair · Bamboo</span><span>Demo</span></div>
+            <div class="ct-price"><span>$11,900</span><a href="#" class="ct-link">View →</a></div>
+          </div>
+        </article>
+
+        <article class="crate reveal" data-cat="source vintage">
+          <div class="crate-photo"><svg><use href="#g-deck"/></svg><span class="crate-status mono amber">Just in</span></div>
+          <div class="crate-tag">
+            <div class="ct-row mono"><span>RAV-77-0415</span><span>Grade B+</span></div>
+            <p class="ct-brand">Nakamichi</p>
+            <h3 class="ct-model">Dragon Cassette Deck</h3>
+            <div class="ct-row ct-meta mono"><span>1982 · Auto-azimuth</span><span>On bench</span></div>
+            <div class="ct-price"><span>$3,600</span><a href="#" class="ct-link">View →</a></div>
+          </div>
+        </article>
+
+        <article class="crate reveal" data-cat="amp">
+          <div class="crate-photo"><svg><use href="#g-amp"/></svg><span class="crate-status mono hold">On hold</span></div>
+          <div class="crate-tag">
+            <div class="ct-row mono"><span>RAV-77-0388</span><span>Grade A</span></div>
+            <p class="ct-brand">Nagra</p>
+            <h3 class="ct-model">Classic Preamp</h3>
+            <div class="ct-row ct-meta mono"><span>2019 · Silver</span><span>Tested</span></div>
+            <div class="ct-price"><span>$9,250</span><a href="#" class="ct-link">View →</a></div>
+          </div>
+        </article>
+
+        <article class="crate reveal" data-cat="source">
+          <div class="crate-photo"><svg><use href="#g-deck"/></svg><span class="crate-status mono">Tested</span></div>
+          <div class="crate-tag">
+            <div class="ct-row mono"><span>RAV-77-0392</span><span>Grade A</span></div>
+            <p class="ct-brand">dCS</p>
+            <h3 class="ct-model">Bartók Streaming DAC</h3>
+            <div class="ct-row ct-meta mono"><span>2021 · Headphone amp</span><span>Tested</span></div>
+            <div class="ct-price"><span>$10,500</span><a href="#" class="ct-link">View →</a></div>
+          </div>
+        </article>
+
+        <article class="crate reveal" data-cat="amp vintage">
+          <div class="crate-photo"><svg><use href="#g-tube"/></svg><span class="crate-status mono">Tested</span></div>
+          <div class="crate-tag">
+            <div class="ct-row mono"><span>RAV-77-0377</span><span>Grade B</span></div>
+            <p class="ct-brand">Fisher</p>
+            <h3 class="ct-model">500-C Tube Receiver</h3>
+            <div class="ct-row ct-meta mono"><span>1963 · 7868 tubes</span><span>Serviced</span></div>
+            <div class="ct-price"><span>$1,450</span><a href="#" class="ct-link">View →</a></div>
+          </div>
+        </article>
+      </div>
+
+      <div class="dock-foot reveal">
+        <a class="btn btn-ghost" href="#">Browse all pre-owned <span aria-hidden="true">→</span></a>
+        <p class="mono">Grades explained · Bench-checked · Packed in-house</p>
+      </div>
+    </section>
+
+    <!-- LISTENING ROOM -->
+    <section class="room" id="room">
+      <div class="room-glow" aria-hidden="true"></div>
+      <div class="room-inner">
+        <div class="room-copy reveal">
+          <p class="mono eyebrow"><span>The listening room</span><span>Brooklyn Navy Yard</span></p>
+          <h2 class="h2 big">Sink into the couch. Put on something you <em class="serif">know by heart.</em></h2>
+          <p>We’ll play it on a few different systems, and you tell us what moves you. Adam and the team will guide you, but your ears decide. No pressure, no quiz on specs. Just music, a good chair, and a couple of honest opinions when you want them.</p>
+
+          <dl class="room-facts">
+            <div><dt class="mono">Where</dt><dd>63 Flushing Ave, Building 77, Suite 502<br />Brooklyn Navy Yard</dd></div>
+            <div><dt class="mono">When</dt><dd>By appointment only,<br />so the room is all yours</dd></div>
+            <div><dt class="mono">Bring</dt><dd>Your records, your playlist,<br />your questions</dd></div>
+          </dl>
+
+          <div class="hero-ctas">
+            <a class="btn btn-amber" href="#">Plan a showroom visit <span aria-hidden="true">→</span></a>
+            <a class="btn btn-ghost" href="tel:17187888362">Call 718-788-8362</a>
+          </div>
+        </div>
+
+        <div class="room-visual reveal" aria-hidden="true">
+          <div class="vu-pair">
+            <div class="vu"><div class="vu-face"><span class="vu-scale"></span><span class="vu-red"></span><span class="vu-needle" data-vu></span><span class="vu-label mono">VU · L</span></div></div>
+            <div class="vu"><div class="vu-face"><span class="vu-scale"></span><span class="vu-red"></span><span class="vu-needle" data-vu></span><span class="vu-label mono">VU · R</span></div></div>
+          </div>
+          <div class="room-card">
+            <p class="mono">Tonight’s chain</p>
+            <ul>
+              <li><span>Source</span><b>Thorens TD 124 / dCS Bartók</b></li>
+              <li><span>Pre</span><b>Nagra Classic</b></li>
+              <li><span>Power</span><b>McIntosh MC275</b></li>
+              <li><span>Speakers</span><b>DeVore O/96</b></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SELL YOUR GEAR -->
+    <section class="sell section" id="sell">
+      <div class="sell-head reveal">
+        <p class="mono eyebrow"><span>StereoBuyers × Resolution</span><span>Est. 1999</span></p>
+        <h2 class="display-2 condensed">We buy<br /><span class="outline">great gear.</span></h2>
+        <p class="sell-lede">Upgrading, downsizing or settling an estate? We’ve been buying hi-fi since Adam was selling a local shop’s used gear on early eBay. One amp or a whole room of it, here’s how it works.</p>
+      </div>
+
+      <div class="labels">
+        <article class="label reveal">
+          <div class="label-top mono"><span>Step</span><span>FRAGILE</span></div>
+          <span class="label-num">01</span>
+          <h3>Tell us what you have</h3>
+          <p>Brand, model and a few photos. Original boxes and manuals help, but they’re not required.</p>
+          <div class="barcode" aria-hidden="true"></div>
+        </article>
+        <article class="label reveal">
+          <div class="label-top mono"><span>Step</span><span>THIS SIDE UP ↑</span></div>
+          <span class="label-num">02</span>
+          <h3>Get a straight number</h3>
+          <p>We’ll explain how we got to the price, and you can ask about a trade toward something new.</p>
+          <div class="barcode" aria-hidden="true"></div>
+        </article>
+        <article class="label reveal">
+          <div class="label-top mono"><span>Step</span><span>HANDLE WITH CARE</span></div>
+          <span class="label-num">03</span>
+          <h3>We take it from there</h3>
+          <p>Drop it at the Navy Yard or talk to us about packing and pickup. You get paid and the gear gets a new home.</p>
+          <div class="barcode" aria-hidden="true"></div>
+        </article>
+      </div>
+
+      <form class="quote reveal" onsubmit="event.preventDefault(); this.classList.add('sent');">
+        <div class="quote-head">
+          <p class="mono">Quick quote</p>
+          <p class="quote-note">We usually reply within a business day.<sup>*</sup></p>
+        </div>
+        <label><span class="mono">Brand</span><input type="text" placeholder="e.g. McIntosh" /></label>
+        <label><span class="mono">Model</span><input type="text" placeholder="e.g. MC275" /></label>
+        <label><span class="mono">Condition</span>
+          <select><option>Works perfectly</option><option>Works, shows wear</option><option>Needs service</option><option>Not sure</option></select>
+        </label>
+        <label><span class="mono">Email</span><input type="email" placeholder="you@email.com" /></label>
+        <button class="btn btn-amber" type="submit">Ask about selling or trading <span aria-hidden="true">→</span></button>
+        <p class="quote-sent mono">Thanks. We’ll be in touch shortly.</p>
+      </form>
+      <p class="fine mono">* Placeholder. Confirm turnaround, pickup and trade-in details before launch.</p>
+    </section>
+
+    <!-- STORY -->
+    <section class="story section" id="about">
+      <div class="story-head reveal">
+        <p class="mono eyebrow"><span>Liner notes</span><span>The long version is on the About page</span></p>
+        <h2 class="display-2 condensed">Wiped out twice.<br /><em class="serif">Still spinning.</em></h2>
+      </div>
+      <ol class="timeline">
+        <li class="reveal"><span class="yr">1999</span><p>An Ithaca College student offers to sell a local hi-fi shop’s used gear on early eBay. StereoBuyers is born.</p></li>
+        <li class="reveal"><span class="yr">2003</span><p>Adam learns the craft on the sales floor at Innovative Audio in Manhattan, and meets his wife there.</p></li>
+        <li class="reveal"><span class="yr">2009</span><p>Resolution Audio Video opens. Two back-to-back townhouse projects make brownstones the specialty.</p></li>
+        <li class="reveal"><span class="yr">2012</span><p>Hurricane Sandy floods Red Hook. We rebuild.</p></li>
+        <li class="reveal"><span class="yr">2025</span><p>A building fire in Red Hook takes it all again. We rebuild again, with a lot of help.</p></li>
+        <li class="reveal is-now"><span class="yr">Now</span><p>Building 77, Brooklyn Navy Yard. A new listening room, open by appointment.</p></li>
+      </ol>
+    </section>
+
+    <!-- SMART HOME -->
+    <section class="home" id="home">
+      <div class="home-inner">
+        <div class="home-copy reveal">
+          <p class="mono eyebrow"><span>B-side</span><span>Smart home since 2009</span></p>
+          <h2 class="h2 big">Hi-fi is where it started. <em class="serif">Your home is where it goes.</em></h2>
+          <p>Music, movies, lighting, shades and networks for brownstones, townhouses and lofts across New York, hidden in the walls and simple to use. The same people stay with your project from the first walkthrough to the final calibration.</p>
+          <a class="btn btn-ghost-dark" href="#">Talk with us about your space <span aria-hidden="true">→</span></a>
+        </div>
+        <ul class="home-list reveal">
+          <li><span class="mono">01</span>Whole-home &amp; multi-room audio</li>
+          <li><span class="mono">02</span>Home theater &amp; media rooms</li>
+          <li><span class="mono">03</span>Lighting &amp; motorized shades</li>
+          <li><span class="mono">04</span>Networking &amp; Wi-Fi</li>
+          <li><span class="mono">05</span>For architects &amp; designers</li>
+        </ul>
+      </div>
+      <div class="press reveal">
+        <p class="mono">As seen in</p>
+        <ul>
+          <li class="p-ad">Architectural Digest</li>
+          <li class="p-wsj">The Wall Street Journal</li>
+          <li class="p-nyt">The New York Times</li>
+          <li class="p-st">Stereophile</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- JOURNAL / VIDEO -->
+    <section class="journal section" id="journal">
+      <div class="section-head row reveal">
+        <div>
+          <p class="mono eyebrow"><span>Journal &amp; video</span><span>@resolutionavbrooklyn</span></p>
+          <h2 class="h2">From the floor.</h2>
+        </div>
+        <a class="btn btn-ghost" href="https://www.youtube.com/@resolutionavbrooklyn">Watch on YouTube <span aria-hidden="true">↗</span></a>
+      </div>
+      <div class="posts">
+        <a class="post reveal" href="#">
+          <div class="post-media v1"><span class="play" aria-hidden="true">▶</span><span class="mono dur">14:22</span></div>
+          <p class="mono">Video · Ø Audio</p>
+          <h3>We put $65,000 speakers in our office for two weeks</h3>
+        </a>
+        <a class="post reveal" href="#">
+          <div class="post-media v2"><span class="play" aria-hidden="true">▶</span><span class="mono dur">09:48</span></div>
+          <p class="mono">Video · Listening</p>
+          <h3>The audiophile speaker that’s not for audiophiles</h3>
+        </a>
+        <a class="post reveal" href="#">
+          <div class="post-media v3"><span class="mono dur">Event</span></div>
+          <p class="mono">Story · Resolution + Compound</p>
+          <h3>A listening party with Common and Pete Rock</h3>
+        </a>
+      </div>
+    </section>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="footer-top">
+      <div class="newsletter">
+        <p class="mono eyebrow"><span>Liner notes</span><span>Monthly-ish</span></p>
+        <h3>New arrivals, listening nights and the occasional rant about cables.</h3>
+        <form onsubmit="event.preventDefault(); this.classList.add('sent');">
+          <input type="email" placeholder="Your email" aria-label="Email" />
+          <button class="btn btn-amber" type="submit">Sign up</button>
+          <span class="nl-sent mono">You’re on the list.</span>
+        </form>
+      </div>
+      <div class="footer-cols">
+        <div><p class="mono">Shop</p><a href="#">New hi-fi</a><a href="#">Pre-owned</a><a href="#">Vintage</a><a href="#">Brands</a></div>
+        <div><p class="mono">Sell</p><a href="#">Get a quote</a><a href="#">Trade-in</a><a href="#">StereoBuyers</a><a href="#">Estates</a></div>
+        <div><p class="mono">Visit</p><a href="#">Listening room</a><a href="#">About</a><a href="#">Press</a><a href="#">Journal</a></div>
+        <div><p class="mono">Reach us</p><a href="tel:17187888362">718-788-8362</a><a href="mailto:info@resolutionavnyc.com">info@resolutionavnyc.com</a><a href="https://www.instagram.com/resolutionavbrooklyn/">Instagram</a><a href="https://www.youtube.com/@resolutionavbrooklyn">YouTube</a></div>
+      </div>
+    </div>
+    <div class="footer-word" aria-hidden="true">resolution</div>
+    <div class="footer-base mono">
+      <span>© 2026 Resolution Audio Video NYC</span>
+      <span>63 Flushing Ave · Bldg 77 · Ste 502 · Brooklyn, NY 11205</span>
+      <a href="../../index.html">← All concepts</a>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

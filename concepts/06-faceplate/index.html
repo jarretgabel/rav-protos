@@ -1,0 +1,268 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Resolution A/V: Hear the difference. Hi-fi, Brooklyn Navy Yard</title>
+  <meta name="description" content="New and pre-owned hi-fi, a listening room at the Brooklyn Navy Yard, we buy used gear, and hi-fi and smart homes across New York. Since 1999." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@62..125,300..900&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+<header class="hdr" id="hdr">
+  <div class="hdr-row">
+    <a href="#top" class="hdr-logo" aria-label="Resolution A/V home"><img src="img/logo.png" alt="" /></a>
+    <nav class="hdr-nav" aria-label="Primary">
+      <a href="#listen">Listen</a>
+      <a href="#buy">Buy</a>
+      <a href="#sell">Sell</a>
+      <a href="#install">Install</a>
+      <a href="#about">About</a>
+    </nav>
+    <div class="hdr-end">
+      <a href="tel:17187888362" class="hdr-tel mono">718-788-8362</a>
+      <a href="#listen" class="box-btn box-btn-sm">Book a listen</a>
+      <button class="hdr-menu box-btn box-btn-sm" aria-expanded="false" aria-controls="drawer">Menu</button>
+    </div>
+  </div>
+
+  <!-- Tuner dial: tracks scroll and doubles as navigation -->
+  <div class="dial" aria-label="Sections">
+    <div class="dial-scale" aria-hidden="true"></div>
+    <a href="#top" style="--x:4">88 <b>Home</b></a>
+    <a href="#press" style="--x:19">92 <b>Press</b></a>
+    <a href="#listen" style="--x:35">96 <b>Listen</b></a>
+    <a href="#buy" style="--x:51">100 <b>Buy</b></a>
+    <a href="#sell" style="--x:67">104 <b>Sell</b></a>
+    <a href="#install" style="--x:83">106 <b>Install</b></a>
+    <a href="#about" style="--x:96">108 <b>About</b></a>
+    <span class="dial-needle" id="needle" aria-hidden="true"></span>
+  </div>
+</header>
+
+<div class="drawer" id="drawer" hidden>
+  <nav aria-label="Mobile">
+    <a href="#listen"><span class="mono">01</span>Listen</a>
+    <a href="#buy"><span class="mono">02</span>Buy</a>
+    <a href="#sell"><span class="mono">03</span>Sell</a>
+    <a href="#install"><span class="mono">04</span>Install</a>
+    <a href="#about"><span class="mono">05</span>About</a>
+  </nav>
+  <p class="mono">63 Flushing Ave · Bldg 77 · Ste 502 · Brooklyn Navy Yard<br /><a href="tel:17187888362">718-788-8362</a></p>
+</div>
+
+<main>
+
+  <!-- HERO -->
+  <section class="hero" id="top">
+    <img class="hero-img" src="img/seat.jpg" alt="The view from the leather couch in the Resolution listening room: DeVore speakers, McIntosh amplifiers, timber beams and a stone wall." />
+    <div class="hero-shade"></div>
+    <div class="hero-frame" aria-hidden="true"></div>
+
+    <div class="hero-content">
+      <div class="logo-box hero-box">
+        <h1>Hear the<br />difference.</h1>
+      </div>
+      <p class="box-cap mono">Resolution A/V · Brooklyn Navy Yard · Since 1999</p>
+      <p class="hero-lede">New and pre-owned hi-fi, a listening room built for it, and people who have bought and sold great gear for over 25 years. If you don’t hear the difference, don’t buy it.</p>
+    </div>
+
+    <nav class="selector" aria-label="What brings you here">
+      <p class="selector-k mono">Input selector</p>
+      <a href="#listen" class="sel"><span class="mono">01</span><b>Listen</b><small>Book the listening room</small><i aria-hidden="true">→</i></a>
+      <a href="#buy" class="sel"><span class="mono">02</span><b>Buy</b><small>New &amp; pre-owned hi-fi</small><i aria-hidden="true">→</i></a>
+      <a href="#sell" class="sel"><span class="mono">03</span><b>Sell</b><small>Get an offer on your gear</small><i aria-hidden="true">→</i></a>
+      <a href="#install" class="sel"><span class="mono">04</span><b>Install</b><small>Hi-fi &amp; smart homes</small><i aria-hidden="true">→</i></a>
+    </nav>
+  </section>
+
+  <!-- PRESS: front and center -->
+  <section class="press" id="press">
+    <div class="press-k">
+      <span class="logo-box logo-box-sm">As featured in</span>
+    </div>
+    <ul class="press-list">
+      <li><span class="pub pub-ad">Architectural Digest</span><span class="mono">Residential hi-fi &amp; design</span></li>
+      <li><span class="pub pub-st">Stereophile</span><span class="mono">Our expertise in pre-owned gear</span></li>
+      <li><span class="pub pub-wsj">The Wall Street Journal</span><span class="mono">Listening at home</span></li>
+      <li><span class="pub pub-nyt">The New York Times</span><span class="mono">Brooklyn hi-fi</span></li>
+    </ul>
+    <p class="clients mono"><span>Trusted by</span> Ulla Johnson · Julie Greenwald · Michael Che · Carmelo Anthony · Studio Calderone · <span class="clients-note">An evening with Common &amp; Pete Rock</span></p>
+    <p class="fine mono">Coverage descriptions are placeholders. Swap in real headlines, dates and links.</p>
+  </section>
+
+  <!-- 01 LISTEN -->
+  <section class="split" id="listen">
+    <figure class="split-img">
+      <img src="img/detail-amps.jpg" alt="McIntosh amplifiers, including an MC275 tube amp, on walnut platforms in blue evening light" loading="lazy" />
+      <div class="inset-frame" aria-hidden="true"></div>
+      <figcaption class="box-cap mono">Tonight’s amps: McIntosh MC275 and friends</figcaption>
+    </figure>
+    <div class="split-txt walnut">
+      <p class="sec-tag"><span class="logo-box logo-box-sm">01</span><span class="mono">Listen</span></p>
+      <h2>Sink into<br />the couch.</h2>
+      <p>Put on something you know by heart. We’ll play it on a few different systems, and you tell us what moves you. Adam and the team will guide you, but your ears decide.</p>
+      <dl class="facts">
+        <div><dt class="mono">Where</dt><dd>63 Flushing Ave, Building 77, Suite 502, Brooklyn Navy Yard</dd></div>
+        <div><dt class="mono">When</dt><dd>By appointment. The room is yours while you’re here.</dd></div>
+        <div><dt class="mono">Bring</dt><dd>Your records, your playlist, your questions.</dd></div>
+      </dl>
+      <div class="ctas">
+        <a href="#contact" class="box-btn box-btn-mustard">Book a listening</a>
+        <a href="tel:17187888362" class="text-link mono">or call 718-788-8362</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- 02 BUY -->
+  <section class="buy" id="buy">
+    <header class="sec-head">
+      <p class="sec-tag"><span class="logo-box logo-box-sm">02</span><span class="mono">Buy</span></p>
+      <h2>On the shelf<br />this week.</h2>
+      <p>Heritage makers like Nagra, dCS, DeVore, McIntosh and Shindo, plus pre-owned pieces checked on our own bench. Everything here plays. Ask us to put it on.</p>
+    </header>
+
+    <div class="plates">
+      <a href="#" class="plate">
+        <div class="plate-img dark"><img src="img/f-nagra-pre.jpg" alt="Nagra Reference preamplifier" loading="lazy" /></div>
+        <div class="plate-legend">
+          <p class="mono"><span>Nagra</span><span class="tag">New</span></p>
+          <h3>Reference Preamp</h3>
+          <p class="plate-price"><span>$137,500</span><i>→</i></p>
+        </div>
+      </a>
+      <a href="#" class="plate">
+        <div class="plate-img"><img src="img/p-shindo.jpg" alt="Shindo 301 Player System turntable" loading="lazy" /></div>
+        <div class="plate-legend">
+          <p class="mono"><span>Shindo Laboratory</span><span class="tag">New</span></p>
+          <h3>301 Player System</h3>
+          <p class="plate-price"><span>$39,995</span><i>→</i></p>
+        </div>
+      </a>
+      <a href="#" class="plate">
+        <div class="plate-img dark"><img src="img/f-dcs.jpg" alt="dCS Vivaldi APEX DAC" loading="lazy" /></div>
+        <div class="plate-legend">
+          <p class="mono"><span>dCS</span><span class="tag tag-used">Pre-owned</span></p>
+          <h3>Vivaldi APEX DAC</h3>
+          <p class="plate-price"><span>$44,500</span><i>→</i></p>
+        </div>
+      </a>
+      <a href="#" class="plate">
+        <div class="plate-img"><img src="img/p-leben.jpg" alt="Leben CS-300XO integrated amplifier" loading="lazy" /></div>
+        <div class="plate-legend">
+          <p class="mono"><span>Leben</span><span class="tag tag-used">Pre-owned</span></p>
+          <h3>CS-300XO Integrated</h3>
+          <p class="plate-price"><span>$4,350</span><i>→</i></p>
+        </div>
+      </a>
+    </div>
+
+    <div class="buy-foot">
+      <a href="#" class="box-btn">Shop new</a>
+      <a href="#" class="box-btn">Shop pre-owned</a>
+      <p class="fine mono">Pre-owned prices are placeholders.</p>
+    </div>
+  </section>
+
+  <!-- 03 SELL -->
+  <section class="sell" id="sell">
+    <img class="sell-bg" src="img/archive.jpg" alt="" loading="lazy" />
+    <div class="sell-shade"></div>
+    <div class="sell-inner">
+      <div class="sell-copy">
+        <p class="sec-tag light"><span class="logo-box logo-box-sm">03</span><span class="mono">Sell</span></p>
+        <h2 class="mega">We buy<br />hi-fi.</h2>
+        <p>Since 1999, when Adam started selling a college-town shop’s trade-ins on early eBay. That became StereoBuyers. One amp, a whole system, a record collection or an estate: tell us what you have and we’ll make you a straight offer, or a trade toward something on the shelf.</p>
+      </div>
+      <form class="quote logo-box" onsubmit="event.preventDefault(); this.classList.add('sent');">
+        <p class="quote-k mono">Get an offer</p>
+        <label><span class="mono">Maker &amp; model</span><input type="text" placeholder="McIntosh MC240" /></label>
+        <label><span class="mono">Condition</span>
+          <select><option>Works great</option><option>Works, shows its age</option><option>Needs service</option><option>Not sure</option></select>
+        </label>
+        <label><span class="mono">Email or phone</span><input type="text" /></label>
+        <button type="submit" class="box-btn box-btn-mustard">Send it over</button>
+        <p class="sent-msg mono">Got it. One of us will get back to you.</p>
+      </form>
+    </div>
+  </section>
+
+  <!-- 04 INSTALL -->
+  <section class="install" id="install">
+    <figure class="wide">
+      <img src="img/home-loft.jpg" alt="A loft living room with a green velvet sofa, walnut coffee table, brass chandelier and built-in shelving with speakers" loading="lazy" />
+      <div class="inset-frame" aria-hidden="true"></div>
+      <figcaption class="wide-cap">
+        <span class="logo-box logo-box-sm">04</span>
+        <span class="mono">Install · Loft living room, Manhattan</span>
+      </figcaption>
+    </figure>
+    <div class="install-body">
+      <h2>Music in the walls.<br />Nothing in the way.</h2>
+      <div class="install-txt">
+        <p>Since 2009 we’ve designed and installed sound, picture, lighting, shades and networks for brownstones, townhouses and lofts across New York, alongside designers like Studio Calderone. The same people stay with your project from the first walkthrough to the final calibration.</p>
+        <div class="ctas">
+          <a href="#contact" class="box-btn box-btn-green">Talk with us about your space</a>
+          <a href="#" class="text-link mono">For architects &amp; designers →</a>
+        </div>
+      </div>
+      <div class="install-thumbs">
+        <figure><img src="img/res-bk-heights.jpg" alt="Brooklyn Heights townhouse parlor with speakers either side of a fireplace" loading="lazy" /><figcaption class="box-cap mono">Brooklyn Heights townhouse</figcaption></figure>
+        <figure><img src="img/rack.jpg" alt="Nagra electronics and a dCS stack on a walnut rack against a stone wall" loading="lazy" /><figcaption class="box-cap mono">Listening room, Building 77</figcaption></figure>
+      </div>
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section class="about" id="about">
+    <div class="about-photo">
+      <img src="img/adam.jpg" alt="Adam Wexler, founder" loading="lazy" />
+      <p class="box-cap mono">Adam Wexler · Founder</p>
+    </div>
+    <div class="about-txt">
+      <blockquote class="logo-box">“We don’t judge, we educate. What sounds good to you is what’s right for you.”</blockquote>
+      <p>Adam grew up with the stereo on from morning to night, taking things apart to see how they worked. He started StereoBuyers in 1999 and Resolution Audio Video in 2009. Some of the team have been with him for 15 years.</p>
+      <ol class="years mono">
+        <li><b>1999</b>StereoBuyers</li>
+        <li><b>2009</b>Resolution A/V</li>
+        <li><b>2012</b>Sandy. Rebuilt.</li>
+        <li><b>2025</b>Fire. Rebuilt.</li>
+        <li><b>Now</b>Building 77</li>
+      </ol>
+    </div>
+  </section>
+
+  <!-- CONTACT: repeat the selector -->
+  <section class="contact" id="contact">
+    <div class="logo-box contact-box">
+      <h2>Where do<br />you want<br />to start?</h2>
+    </div>
+    <div class="contact-side">
+      <nav class="selector selector-stack" aria-label="Start here">
+        <a href="tel:17187888362" class="sel"><span class="mono">01</span><b>Listen</b><small>Book the room</small><i>→</i></a>
+        <a href="#buy" class="sel"><span class="mono">02</span><b>Buy</b><small>See what’s on the shelf</small><i>→</i></a>
+        <a href="#sell" class="sel"><span class="mono">03</span><b>Sell</b><small>Get an offer</small><i>→</i></a>
+        <a href="mailto:info@resolutionavnyc.com" class="sel"><span class="mono">04</span><b>Install</b><small>Tell us about your space</small><i>→</i></a>
+      </nav>
+      <p class="mono contact-line">718-788-8362 · info@resolutionavnyc.com<br />63 Flushing Ave · Building 77 · Suite 502 · Brooklyn Navy Yard</p>
+    </div>
+  </section>
+</main>
+
+<footer class="ftr">
+  <img class="ftr-logo" src="img/logo.png" alt="Resolution A/V" />
+  <div class="ftr-cols mono">
+    <div><b>Visit</b>63 Flushing Ave<br />Bldg 77, Ste 502<br />Brooklyn, NY 11205</div>
+    <div><b>Talk</b><a href="tel:17187888362">718-788-8362</a><br /><a href="mailto:info@resolutionavnyc.com">info@resolutionavnyc.com</a></div>
+    <div><b>Follow</b><a href="https://www.instagram.com/resolutionavbrooklyn/">Instagram</a><br /><a href="https://www.youtube.com/@resolutionavbrooklyn">YouTube</a></div>
+    <div><b>Proto</b><a href="../../index.html">All concepts</a></div>
+  </div>
+  <p class="ftr-base mono">© 2026 Resolution Audio Video NYC</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>

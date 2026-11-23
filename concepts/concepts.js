@@ -1,0 +1,111 @@
+// Concept registry — add a new entry here and it appears on the hub homepage.
+window.RAV_CONCEPTS = [
+  {
+    id: "01",
+    slug: "01-building-77",
+    name: "Building 77",
+    tagline: "Warm vinyl. Raw warehouse. Your ears decide.",
+    description:
+      "Night-black concrete, tube-amber glow and a record spinning at a true 33⅓. Inventory reads like crate tags, the buy/sell flow like shipping labels. Edgy, grown-up, unmistakably Brooklyn.",
+    tags: ["Dark", "Editorial", "Vinyl", "Warehouse"],
+    swatches: ["#100e0c", "#efede5", "#e39a4b", "#338faa", "#0f3d51"],
+    status: "draft",
+    updated: "2026-11-16",
+  },
+  {
+    id: "02",
+    slug: "02-the-room",
+    name: "The Room",
+    tagline: "A record-shop price list, with a listening room attached.",
+    description:
+      "Designed like a print catalog around the real RAV stencil logo and the team's own photos. Paper and ink, hairline rules, a price list table, an intake slip for selling gear, and one orange bin sticker. No gradients, no glow.",
+    tags: ["Light", "Print", "Catalog", "Real photos"],
+    swatches: ["#efede5", "#131313", "#e0502a", "#e6e2d6", "#338faa"],
+    status: "draft",
+    updated: "2026-11-16",
+  },
+  {
+    id: "03",
+    slug: "03-reference",
+    name: "Reference",
+    tagline: "Listen first. Quiet luxury with warehouse bones.",
+    description:
+      "Warm black, bone and brass. A high-contrast Bodoni set against the raw RAV stencil logo, full-bleed photos of the Navy Yard room, private auditions, a considered collection and discreet acquisitions. Restrained in the way the best houses are.",
+    tags: ["Dark", "Luxury", "Cinematic", "Real photos"],
+    swatches: ["#0e0d0c", "#ece7dd", "#b8925a", "#161412", "#a49c8f"],
+    status: "draft",
+    updated: "2026-11-16",
+  },
+  {
+    id: "04",
+    slug: "04-atelier",
+    name: "Atelier",
+    tagline: "The art of listening. A vault and a gallery.",
+    description:
+      "Built for six-figure buyers. Flagship instruments from Nagra, Rockport, DeVore and dCS on a black stage, a scroll-driven reference sequence, museum placards on ivory, a cinematic room reveal, and a private-client and acquisitions layer.",
+    tags: ["Ultra luxury", "Cinematic", "Scroll-driven", "Real products"],
+    swatches: ["#060606", "#f3efe7", "#d9d5cc", "#c6ae7e", "#0d0d0c"],
+    status: "draft",
+    updated: "2026-11-16",
+  },
+  {
+    id: "05",
+    slug: "05-maison",
+    name: "Maison",
+    tagline: "Made to be heard. Light, architectural, gallery-quiet.",
+    description:
+      "Limestone and plaster with oxblood, the color of the leather couch. A framed hero print, a concert-style weekly programme, curated complete-system Suites with prices, a makers index with hover previews, pre-owned lots with provenance, and consignment.",
+    tags: ["Light", "Ultra luxury", "Architectural", "Real products"],
+    swatches: ["#eee9df", "#e3dccf", "#1d1916", "#5b1f1c", "#cfc5b4"],
+    status: "draft",
+    updated: "2026-11-16",
+  },
+  {
+    id: "06",
+    slug: "06-faceplate",
+    name: "Faceplate",
+    tagline: "Hear the difference. The logo box becomes the system.",
+    description:
+      "Mid-century, edge to edge. The RAV logo's ruled box frames headlines, buttons, labels and product plates. RCA-style wide caps, walnut, avocado and mustard. Press up front, an input selector that steers visitors to Listen, Buy, Sell or Install, and a tuner-dial scrollbar.",
+    tags: ["Mid-century", "Edge to edge", "Logo box system", "Steers"],
+    swatches: ["#f1ebdf", "#14110e", "#4a2f1c", "#36502f", "#d9a032"],
+    status: "draft",
+    updated: "2026-11-18",
+  },
+  {
+    id: "07",
+    slug: "07-after-hours",
+    name: "After Hours",
+    tagline: "Pull up a chair. The listening room at 9pm.",
+    description:
+      "Vibey, relaxed mid-century. Teak darkness, lamp-amber glow, avocado and burnt orange, soft 70s serif. Press up front, sliding credenza doors that steer to Listen, Buy, Sell or At Home, systems by time of day, hairline logo-box frames, and an optional vinyl-crackle room tone.",
+    tags: ["Mid-century", "Relaxed", "Edge to edge", "Steers"],
+    swatches: ["#140d08", "#2c1c11", "#e2a457", "#c2602c", "#6f7a45"],
+    status: "draft",
+    updated: "2026-11-18",
+  },
+  {
+    id: "08",
+    slug: "08-case-study",
+    name: "Case Study",
+    tagline: "Built for listening. Daylight mid-century, catalog-grade.",
+    description:
+      "Knoll and Herman Miller catalog structure: a boxed catalog-cover hero, press in a ruled grid, a teak wall unit that steers to Listen, Buy, Sell or Install, a three-question system finder, product plates on olive, orange and teak grounds.",
+    tags: ["Mid-century", "Light", "Edge to edge", "System finder"],
+    swatches: ["#f3eee4", "#171411", "#8f5a2f", "#66693a", "#d6582a"],
+    status: "draft",
+    updated: "2026-11-18",
+  },
+  {
+    id: "09",
+    slug: "09-late-set",
+    name: "Late Set",
+    tagline: "Turn the lights down. The darkest, moodiest direction.",
+    description:
+      "1960s jazz-sleeve mood. The room in near-darkness with a pool of lamplight that follows your cursor, press as back-of-sleeve credits, record sleeves that slide their record out to steer to Listen, Buy, Sell or Install.",
+    tags: ["Dark", "Moody", "Mid-century", "Steers"],
+    swatches: ["#070605", "#ece4d4", "#e8a24a", "#2f7f86", "#b23a26"],
+    status: "draft",
+    updated: "2026-11-18",
+  },
+];
