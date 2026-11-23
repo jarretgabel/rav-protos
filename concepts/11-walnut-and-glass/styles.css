@@ -326,3 +326,10 @@ h1 em, h2 em { color: var(--walnut); }
 @media (prefers-reduced-motion: reduce) {
   *, *::before, *::after { animation: none !important; transition: none !important; }
 }
+
+/* Header jump back to the four doors, shown once you've scrolled past them */
+.hdr-where { display: none; }
+.past-hero .hdr-where { display: inline-flex; color: var(--champ-2); }
+.past-hero .hdr-where:hover { background: var(--champ-2); color: var(--ink); border-color: var(--champ-2); }
+.past-hero .hdr-tel { display: none; }
+@media (max-width: 900px) { .past-hero .hdr-where { display: none; } }

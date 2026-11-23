@@ -22,6 +22,10 @@
     if (visit && visit.offsetTop <= y) cur = null;
     links.forEach(function (a) { a.classList.toggle("on", a.getAttribute("href") === "#" + cur); });
   }
+  var heroEl = document.getElementById("top");
+  function pastHero() { document.documentElement.classList.toggle("past-hero", window.scrollY > heroEl.offsetHeight * 0.75); }
+  window.addEventListener("scroll", pastHero, { passive: true });
+  pastHero();
   window.addEventListener("scroll", lamps, { passive: true });
   window.addEventListener("resize", lamps);
   lamps();

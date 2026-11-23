@@ -54,6 +54,10 @@
     var dockCur = cur === "#preowned" ? "#shop" : cur;
     dockLinks.forEach(function (a) { a.classList.toggle("on", a.getAttribute("href") === dockCur); });
   }
+  var heroEl = document.getElementById("top");
+  function pastHero() { document.documentElement.classList.toggle("past-hero", window.scrollY > heroEl.offsetHeight * 0.75); }
+  window.addEventListener("scroll", pastHero, { passive: true });
+  pastHero();
   window.addEventListener("scroll", active, { passive: true });
   active();
 

@@ -17,7 +17,7 @@ window.RAV_ROUNDS = [
     id: 3,
     name: "Wayfinding first",
     date: "2026-11-22",
-    note: "After round 2: two focused concepts. One evolves Case Study; one combines Reference and Atelier's edge-to-edge look with The Room's mid-century warmth. Both put every visitor's path in the first screen.",
+    note: "After round 2: three focused concepts. One evolves Case Study; one combines Reference and Atelier's edge-to-edge look with The Room's mid-century warmth; one evolves Late Set. All three put every visitor's path in the first screen.",
   },
 ];
 
@@ -162,6 +162,19 @@ window.RAV_CONCEPTS = [
       "Reference and Atelier's full-bleed photography with The Room's mid-century warmth. The first screen is four photo doors: Listen, Buy, Sell and Install. The RAV logo box frames labels, photos, buttons and press nameplates. Marantz faceplate legends, RCA-weight labels, McIntosh-manual specs and Telefunken box labels, a glass header whose input lamps light up as you scroll, and gear shot in the room under warm light.",
     tags: ["Mid-century", "Edge to edge", "Logo box system", "Wayfinding"],
     swatches: ["#efe7d8", "#0d0c0b", "#5a3820", "#cdb68a", "#6cc8e6"],
+    status: "draft",
+    updated: "2026-11-22",
+  },
+  {
+    id: "12",
+    round: 3,
+    slug: "12-encore",
+    name: "Encore",
+    tagline: "Late Set, evolved. The dark room, with every door above the fold.",
+    description:
+      "Built on Late Set (09). Lamplight follows the cursor over the room, with Listen, Buy, Sell and Install as big logo-box buttons above the fold. A 'Where would you like to begin?' setlist of record sleeves with back-of-sleeve track lists, and a header button that jumps there from anywhere. Press up front, a StereoBuyers handoff, warm in-room photos.",
+    tags: ["Dark", "Moody", "Mid-century", "Wayfinding"],
+    swatches: ["#070605", "#ece4d4", "#e8a24a", "#b23a26", "#2f7f86"],
     status: "draft",
     updated: "2026-11-22",
   },
