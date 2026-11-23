@@ -108,4 +108,16 @@ window.RAV_CONCEPTS = [
     status: "draft",
     updated: "2026-11-18",
   },
+  {
+    id: "10",
+    slug: "10-contents",
+    name: "Contents",
+    tagline: "Case Study, evolved. Every visitor finds their page in the first screen.",
+    description:
+      "Built on Case Study (08). The hero is a catalog contents page: Shop new, Pre-owned, Sell, Listen and Install, each with its own sub-links. Press strip up front, a shop mega menu and search, a pre-owned ledger, a StereoBuyers handoff, a booking picker, and a job dock on phones.",
+    tags: ["Mid-century", "Light", "Wayfinding", "Press up front"],
+    swatches: ["#f3eee4", "#171411", "#8f5a2f", "#66693a", "#d6582a"],
+    status: "draft",
+    updated: "2026-11-22",
+  },
 ];
