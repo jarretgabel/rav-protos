@@ -14,6 +14,12 @@ window.RAV_ROUNDS = [
     note: "After round 1: a mid-century feel, edge-to-edge layouts, press up front, the logo box as a recurring motif, and clear paths to Listen, Buy, Sell and Install.",
   },
   {
+    id: 4,
+    name: "Walnut & Glass, two ways",
+    date: "2026-11-27",
+    note: "After the round 3 call: Walnut & Glass was the favorite. Two versions to compare, both daytime and colorful, with the logo up front, Design (smart homes and installs) leading the four paths, more proof (press and reviews) and the pre-owned bench. One keeps the photo doors; one leads with the logo and four colour blocks.",
+  },
+  {
     id: 3,
     name: "Wayfinding first",
     date: "2026-11-22",
@@ -177,5 +183,31 @@ window.RAV_CONCEPTS = [
     swatches: ["#070605", "#ece4d4", "#e8a24a", "#b23a26", "#2f7f86"],
     status: "draft",
     updated: "2026-11-22",
+  },
+  {
+    id: "13",
+    round: 4,
+    slug: "13-walnut-and-glass-ii",
+    name: "Walnut & Glass II",
+    tagline: "The favorite, adjusted. Logo up front, Design leads, more to see.",
+    description:
+      "Walnut & Glass revised from the call: a walnut header instead of black, the RAV logo large beside the headline, Design (smart homes and installs) as the first and widest door, captions always visible, natural color so the photos pop, chunky RAV angles, the pre-owned bench with recently sold and a StereoBuyers link, press plus Google reviews.",
+    tags: ["Mid-century", "Daylight", "Edge to edge", "Logo up front"],
+    swatches: ["#efe7d8", "#2b1b10", "#5a3820", "#cdb68a", "#c23a24"],
+    status: "draft",
+    updated: "2026-11-27",
+  },
+  {
+    id: "14",
+    round: 4,
+    slug: "14-open-house",
+    name: "Open House",
+    tagline: "Same essence, different shape. The logo is the cover.",
+    description:
+      "A comparison for Walnut & Glass II with the same mid-century palette, type and four paths. A light header, the RAV logo as the hero beside a client's home, and Design, Listen, Buy and Sell as four chunky colour blocks cut at the logo's angles. Each section is an edge-to-edge split room in walnut, mustard, avocado or cream.",
+    tags: ["Mid-century", "Daylight", "Colour blocks", "Logo up front"],
+    swatches: ["#f4eee2", "#5a3820", "#d9a23c", "#5f6b34", "#c4532d"],
+    status: "draft",
+    updated: "2026-11-27",
   },
 ];
