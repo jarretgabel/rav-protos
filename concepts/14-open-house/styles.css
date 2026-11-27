@@ -664,3 +664,6 @@ body { letter-spacing: .003em; }
 .proof-reviews { grid-template-columns: 1fr; }
 .block b { letter-spacing: 0; }
 .block:hover { filter: brightness(1.05); }
+
+/* A walnut rule between the founder quote and the visit section */
+.oh-visit { border-top: 8px solid var(--walnut); }
