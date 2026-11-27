@@ -214,3 +214,13 @@ em { font-style: italic; }
 @media (prefers-reduced-motion: reduce) {
   *, *::before, *::after { transition: none !important; }
 }
+
+/* Readability: Bodoni Moda's display cut turns its hairlines to threads at large sizes.
+   Pin a text optical size so the thin strokes stay visible, and set a touch heavier. */
+h1, h2, .statement > p, .client p, .founder p, .index b, .fp-text b, .mini b, .design-row figcaption b, .drawer nav a, .pub-ad {
+  font-optical-sizing: none;
+  font-variation-settings: "opsz" 14;
+  font-weight: 450;
+}
+.statement > p { font-size: clamp(24px, 2.3vw, 36px); line-height: 1.38; letter-spacing: -0.005em; }
+.client p { font-size: clamp(26px, 2.6vw, 40px); line-height: 1.32; }
