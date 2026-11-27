@@ -667,3 +667,7 @@ body { letter-spacing: .003em; }
 
 /* A walnut rule between the founder quote and the visit section */
 .oh-visit { border-top: 8px solid var(--walnut); }
+
+/* Outlined "Book a listen" over the hero photo: the slanted cut clipped its right border,
+   so it's a plain logo-box rectangle until the header turns solid (then it slants again). */
+.oh-hdr:not(.solid):not(.open) .fbtn.slant { clip-path: none; padding-right: 13px; }
