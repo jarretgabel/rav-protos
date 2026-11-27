@@ -17,7 +17,7 @@ window.RAV_ROUNDS = [
     id: 4,
     name: "Walnut & Glass, two ways",
     date: "2026-11-27",
-    note: "After the round 3 call: Walnut & Glass was the favorite. Two versions to compare, both daytime and colorful, with the logo up front, Design (smart homes and installs) leading the four paths, more proof (press and reviews) and the pre-owned bench. One keeps the photo doors; one leads with the logo and four colour blocks.",
+    note: "After the round 3 call: Walnut & Glass was the favorite. Two versions to compare, both daytime and colorful, with the logo up front, Design (smart homes and installs) leading the four paths, more proof (press and reviews) and the pre-owned bench. One keeps the photo doors; one leads with the logo and four colour blocks, shown with two header options.",
   },
   {
     id: 3,
@@ -206,6 +206,19 @@ window.RAV_CONCEPTS = [
     description:
       "A comparison for Walnut & Glass II with the same mid-century palette, type and four paths. A light header, the RAV logo as the hero beside a client's home, and Design, Listen, Buy and Sell as four chunky colour blocks cut at the logo's angles. Each section is an edge-to-edge split room in walnut, mustard, avocado or cream.",
     tags: ["Mid-century", "Daylight", "Colour blocks", "Logo up front"],
+    swatches: ["#f4eee2", "#5a3820", "#d9a23c", "#5f6b34", "#c4532d"],
+    status: "draft",
+    updated: "2026-11-27",
+  },
+  {
+    id: "14B",
+    round: 4,
+    slug: "14b-open-house-full-width",
+    name: "Open House, full-width header",
+    tagline: "Open House with a full-width header option. No half-width split.",
+    description:
+      "The same page as Open House with a different header: a centered masthead with the RAV logo beside the headline, then a full-width panorama of a client's home with the four colour blocks along its bottom edge. Everything below the header is unchanged.",
+    tags: ["Header option", "Daylight", "Colour blocks", "Logo up front"],
     swatches: ["#f4eee2", "#5a3820", "#d9a23c", "#5f6b34", "#c4532d"],
     status: "draft",
     updated: "2026-11-27",

@@ -454,3 +454,29 @@ h1 em, h2 em { color: var(--walnut); }
   .chunks { display: none; }
   .door { min-height: 136px; }
 }
+
+/* Vertical breathing room (Nov 27): same look, more space between things */
+.hero .intro { padding-top: clamp(40px, 4.4vw, 72px); padding-bottom: clamp(36px, 4vw, 64px); }
+.press { padding-block: clamp(64px, 7vw, 112px); }
+.bleed { padding-block: clamp(72px, 9vw, 150px); }
+.card { padding-block: clamp(36px, 4vw, 64px); }
+.card h2 { margin-bottom: 22px; }
+.card > p:not(.sec-tag) { margin-bottom: 26px; line-height: 1.7; }
+.svc, .facts { margin-bottom: 32px; }
+.svc a { padding-block: 12px; }
+.facts li { padding-block: 11px; }
+.strip { margin-block: clamp(40px, 5vw, 80px); }
+.buy { padding-top: clamp(100px, 11vw, 170px); padding-bottom: clamp(72px, 8vw, 120px); }
+.buy-head { margin-bottom: clamp(40px, 4.4vw, 68px); }
+.bench { padding-top: clamp(72px, 8vw, 128px); }
+.lg-row { padding-block: 17px; }
+.sold { padding-top: 24px; }
+.browse { padding-block: 30px; margin-top: 24px; }
+.sell-copy { padding-block: clamp(88px, 10vw, 170px); }
+.reviews { padding-block: clamp(88px, 10vw, 160px); }
+.founder { padding-block: clamp(110px, 12vw, 200px); }
+@media (max-width: 900px) {
+  .bleed { padding-block: 0; }
+  .card { padding-block: 40px 56px; }
+  .strip { margin-block: 32px; }
+}
