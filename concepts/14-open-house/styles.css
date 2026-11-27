@@ -671,3 +671,7 @@ body { letter-spacing: .003em; }
 /* Outlined "Book a listen" over the hero photo: the slanted cut clipped its right border,
    so it's a plain logo-box rectangle until the header turns solid (then it slants again). */
 .oh-hdr:not(.solid):not(.open) .fbtn.slant { clip-path: none; padding-right: 13px; }
+
+/* Phones: no fixed bottom bar; the colour blocks and the menu cover the four paths */
+.oh-dock { display: none !important; }
+@media (max-width: 900px) { body { padding-bottom: 0; } }
