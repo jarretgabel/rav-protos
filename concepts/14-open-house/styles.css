@@ -598,3 +598,69 @@ html { scroll-padding-top: var(--oh-hdr); }
   .thumbs { grid-template-columns: repeat(2, 1fr); }
   .where div { grid-template-columns: 1fr; gap: 0; }
 }
+
+/* =====================================================================
+   Residence-style header (Nov 27): the header sits transparent over a
+   full-bleed client home with the logo and headline on it, and turns to
+   paper once you scroll. The colour blocks sit right beneath.
+   ===================================================================== */
+.oh-hdr { background: transparent; border-bottom: 0; color: var(--cream); transition: background .7s cubic-bezier(.22,1,.36,1), color .7s, box-shadow .7s; }
+.oh-hdr::before { content: ""; position: absolute; inset: 0; z-index: -1; background: linear-gradient(180deg, rgba(15,11,8,.55), transparent); transition: opacity .7s; }
+.oh-hdr .oh-logo img { filter: invert(1); transition: filter .7s; }
+.oh-hdr .oh-tel { color: rgba(244,238,226,.8); }
+.oh-hdr .fbtn.slant { background: transparent; border-color: currentColor; color: inherit; }
+.oh-hdr .hdr-menu { background: transparent; border-color: currentColor; color: inherit; }
+.oh-hdr.solid, .oh-hdr.open { background: rgba(244,238,226,.98); color: var(--ink); box-shadow: 0 1px 0 rgba(21,17,13,.16); }
+.oh-hdr.solid::before, .oh-hdr.open::before { opacity: 0; }
+.oh-hdr.solid .oh-logo img, .oh-hdr.open .oh-logo img { filter: none; }
+.oh-hdr.solid .oh-tel { color: var(--ink-2); }
+.oh-hdr.solid .fbtn.slant { background: var(--ink); border-color: var(--ink); color: var(--cream); }
+
+.rs-hero { position: relative; height: calc(100vh - clamp(120px, 15vh, 160px)); min-height: 560px; overflow: hidden; color: var(--cream); }
+.rs-photo { position: absolute; inset: 0; }
+.rs-photo img { width: 100%; height: 100%; object-fit: cover; object-position: 50% 58%; }
+.rs-hero::after { content: ""; position: absolute; inset: 0; pointer-events: none; background: linear-gradient(0deg, rgba(15,11,8,.72) 0%, rgba(15,11,8,.35) 38%, rgba(15,11,8,0) 62%), linear-gradient(90deg, rgba(15,11,8,.45) 0%, rgba(15,11,8,0) 55%); }
+.rs-mark { position: absolute; left: var(--side); bottom: clamp(40px, 6vh, 76px); z-index: 1; max-width: 680px; }
+.rs-mark > img { width: clamp(220px, 21vw, 330px); filter: invert(1); margin-bottom: clamp(22px, 2.8vw, 36px); }
+.rs-mark h1 { font-size: clamp(40px, 4.2vw, 70px); line-height: 1.02; margin-bottom: 18px; }
+.rs-mark h1 em { display: block; color: var(--mustard); }
+.rs-mark .oh-press { color: rgba(244,238,226,.8); }
+.rs-mark .oh-press span { color: var(--cream); border-color: rgba(244,238,226,.7); }
+.rs-cap { position: absolute; right: var(--side); bottom: clamp(40px, 6vh, 76px); z-index: 1; color: rgba(244,238,226,.85); }
+.blocks { border-top: 0; }
+
+@media (max-width: 900px) {
+  .rs-hero { height: 70vh; min-height: 480px; }
+  .rs-mark > img { width: 190px; }
+  .rs-mark .oh-press { display: none; }
+  .rs-cap { display: none; }
+}
+/* =====================================================================
+   Subtle high-end pass (Nov 27). Same vibe; finer details:
+   - one fewer typeface: prices, specs and dates use the body face (tabular)
+   - thinner rules and boxes (3px -> 2px), finer red stripes
+   - no star-rating badge; client words carry the reviews
+   - slower, gentler motion
+   ===================================================================== */
+:root { --rule: 2px; --type: var(--sans); --hatch: repeating-linear-gradient(-45deg, var(--red) 0 2px, transparent 2px 7px); }
+.price, .lg-row span, .facts li, .notes dd, .visit dd, .where dd, .sold { font-variant-numeric: tabular-nums; }
+.price { font-family: var(--sans); font-weight: 600; font-size: 13.5px; letter-spacing: .01em; border-width: 1.5px; }
+.tube-label { border-width: 2px; padding-top: 15px; }
+.tube-label::before, .ledger::before { height: 5px; }
+.tube-label::before { border-bottom-width: 1px; }
+.np, .rv-score, .pair-box, .door-box, .tag-box, .fbtn { border-width: 2px; }
+.strip figcaption, .bleed-cap, .room-photo figcaption { border-width: 1.5px; }
+.rv-score { display: none; }
+.door, .door img, .item-img img, .strip img, .block, .thumbs img { transition-duration: .9s, 1.6s; }
+.door img, .item-img img, .strip img { transition: transform 1.8s cubic-bezier(.22,1,.36,1), filter .9s; }
+.item:hover .item-img img, .door:hover img { transform: scale(1.03); }
+body { letter-spacing: .003em; }
+/* 14: slightly deeper, richer blocks and finer rules */
+:root { --mustard: #c99536; --avocado: #55612f; --ember: #b24a29; --walnut: #52331e; }
+.room { border-bottom: 1px solid rgba(21,17,13,.18); }
+.oh-buy, .proof { border-bottom: 1px solid rgba(21,17,13,.18); }
+.oh-buy .shelf { background: var(--walnut); }
+.thumbs img { border-width: 1px; }
+.proof-reviews { grid-template-columns: 1fr; }
+.block b { letter-spacing: 0; }
+.block:hover { filter: brightness(1.05); }
