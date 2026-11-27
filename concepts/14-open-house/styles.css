@@ -667,3 +667,31 @@ body { letter-spacing: .003em; }
 
 /* A walnut rule between the founder quote and the visit section */
 .oh-visit { border-top: 8px solid var(--walnut); }
+
+/* =====================================================================
+   Deeper, richer mid-century palette (Nov 27)
+   Design walnut · Listen deep teal · Buy oxblood · Sell burnt sienna.
+   Cream text on every panel; brass-toned accents.
+   ===================================================================== */
+:root { --walnut: #4a2e1c; --mustard: #1f4e4a; --avocado: #6b2a26; --ember: #9a4a26; --brass: #d2b07a; }
+.b-mustard, .b-avocado, .b-ember { color: var(--cream); }
+.oh-dock a.b-mustard { color: var(--cream); }
+.rs-mark h1 em { color: var(--brass); }
+
+/* Listen panel: deep teal with cream text */
+.p-mustard { color: var(--cream); }
+.p-mustard h2 em { color: var(--brass); }
+.p-mustard .facts li { border-color: rgba(244,238,226,.2); }
+.p-mustard .facts .lbl { color: rgba(244,238,226,.7); }
+.p-mustard .room-tag .lbl { color: rgba(244,238,226,.75); }
+.p-mustard .room-tag b { background: var(--cream); color: var(--mustard); }
+.p-mustard .fbtn { background: var(--cream); border-color: var(--cream); color: var(--ink); }
+.p-mustard .fbtn:hover { background: transparent; color: var(--cream); }
+.p-mustard .tlink:hover { color: var(--brass); }
+
+/* Sell panel: burnt sienna with cream text */
+.p-avocado { background: var(--ember); }
+.p-avocado h2 em { color: #f1d9b2; }
+.p-avocado .room-tag b { color: var(--ember); }
+.p-avocado .pair-sb { color: var(--ember); }
+.p-avocado .tlink:hover { color: #f1d9b2; }
