@@ -204,9 +204,9 @@ window.RAV_CONCEPTS = [
     name: "Open House",
     tagline: "Same essence, different shape. A client's home with the logo on it.",
     description:
-      "A comparison for Walnut & Glass II with the same mid-century palette, type and four paths. A client's home full bleed with the RAV logo and headline on it (the header sits over the photo and turns solid as you scroll), and Design, Listen, Buy and Sell as four chunky colour blocks cut at the logo's angles right beneath. Each section is an edge-to-edge split room in walnut, sage, warm stone or cream.",
+      "A comparison for Walnut & Glass II with the same mid-century palette, type and four paths. A client's home full bleed with the RAV logo and headline on it (the header sits over the photo and turns solid as you scroll), and Design, Listen, Buy and Sell as four chunky colour blocks cut at the logo's angles right beneath. Each section is an edge-to-edge split room in walnut, mustard, avocado or cream.",
     tags: ["Mid-century", "Daylight", "Colour blocks", "Logo up front"],
-    swatches: ["#f4eee2", "#4a2e1c", "#a7b19a", "#c9a48a", "#7d6d5b"],
+    swatches: ["#f4eee2", "#5a3820", "#d9a23c", "#5f6b34", "#c4532d"],
     status: "draft",
     updated: "2026-11-27",
   },

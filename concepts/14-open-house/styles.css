@@ -667,28 +667,3 @@ body { letter-spacing: .003em; }
 
 /* A walnut rule between the founder quote and the visit section */
 .oh-visit { border-top: 8px solid var(--walnut); }
-
-/* =====================================================================
-   Soft, muted mid-century palette (Nov 27)
-   Design walnut · Listen sage · Buy blush clay · Sell warm stone.
-   Ink text on the light panels, cream on the dark ones.
-   ===================================================================== */
-:root { --mustard: #a7b19a; --avocado: #c9a48a; --ember: #7d6d5b; --sage-ink: #2f3a2c; }
-.b-mustard, .b-avocado { color: var(--ink); }
-.b-ember { color: var(--cream); }
-.oh-dock a.b-avocado { color: var(--ink); }
-.rs-mark h1 em { color: #e2c6a8; }
-
-/* Listen panel: sage */
-.p-mustard h2 em { color: var(--walnut); }
-.p-mustard .facts li { border-color: rgba(21,17,13,.2); }
-
-/* Sell panel: warm stone with cream text */
-.p-avocado { background: var(--ember); color: var(--cream); }
-.p-avocado h2 em { color: #ead6bb; }
-.p-avocado .room-tag b { color: var(--ember); }
-.p-avocado .pair-sb { color: var(--ember); }
-.p-avocado .tlink:hover { color: #ead6bb; }
-
-/* Buy tag: clay with ink text */
-.oh-buy-head .room-tag b { color: var(--ink); }
