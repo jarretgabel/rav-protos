@@ -224,3 +224,57 @@ h1, h2, .statement > p, .client p, .founder p, .index b, .fp-text b, .mini b, .d
 }
 .statement > p { font-size: clamp(24px, 2.3vw, 36px); line-height: 1.38; letter-spacing: -0.005em; }
 .client p { font-size: clamp(26px, 2.6vw, 40px); line-height: 1.32; }
+
+/* =====================================================================
+   More interesting (Nov 27: "too airy and beige")
+   Tighter spacing, darker text, and three deep bands to give the page
+   rhythm: a walnut index under the hero, a bottle-green listening room,
+   and walnut client words. Brass stays the accent.
+   ===================================================================== */
+:root { --ink-2: #4f473e; --green: #1f3a2f; --green-2: #2a4a3c; --linen: #e5dbc9; }
+
+/* Index: a walnut band anchoring the hero */
+.index { background: var(--walnut); color: var(--paper); border-bottom: 0; }
+.index a { border-right-color: rgba(247,244,238,.16); min-height: 132px; }
+.index span { color: rgba(247,244,238,.72); }
+.index i { color: var(--brass); }
+.index a:hover { background: #573722; }
+@media (max-width: 1100px) { .index a:nth-child(-n+2) { border-bottom-color: rgba(247,244,238,.16); } }
+
+/* Tighter verticals */
+.statement { padding: clamp(72px, 7.4vw, 120px) var(--side) clamp(60px, 6vw, 96px); }
+.statement > p { margin-bottom: clamp(40px, 4vw, 60px); }
+.design { padding-bottom: clamp(72px, 7.4vw, 120px); }
+.design-row { margin-top: clamp(56px, 5.4vw, 88px); }
+.buy { padding-block: clamp(72px, 7.4vw, 120px); }
+.sell { padding: clamp(72px, 7.4vw, 120px) var(--side); background: var(--linen); }
+.words { padding-block: clamp(72px, 7.4vw, 120px); }
+.client { margin-bottom: clamp(56px, 6vw, 90px); }
+.visit { padding-block: clamp(72px, 7.4vw, 120px); }
+
+/* Listen: a bottle-green band */
+.listen { background: var(--green); color: var(--paper); padding-bottom: clamp(72px, 7.4vw, 120px); }
+.listen-text { margin-top: clamp(56px, 5.4vw, 88px); }
+.listen-text .cap, .listen .note, .listen-text > p:not(.cap):not(.note) { color: rgba(247,244,238,.78); }
+.listen .btn { border-color: var(--brass); color: var(--paper); }
+.listen .btn:hover { background: var(--brass); color: var(--ink); }
+
+/* Client words + founder: a walnut band */
+.words { background: var(--walnut); color: var(--paper); }
+.words .cap { color: rgba(247,244,238,.65); }
+.words .cap i { color: var(--brass); }
+.founder { border-top-color: rgba(247,244,238,.18); }
+.words .fine { color: rgba(247,244,238,.55); opacity: 1; }
+
+/* Footer: bottle green, so it closes on a different note than the walnut above */
+.ftr { background: var(--green); }
+
+/* A brass rule above each section label for a bit of finish */
+.design-text .cap, .listen-text .cap, .sell-text .cap, .buy-head .cap { position: relative; padding-top: 18px; }
+.design-text .cap::before, .listen-text .cap::before, .sell-text .cap::before, .buy-head .cap::before { content: ""; position: absolute; left: 0; top: 0; width: 40px; height: 1px; background: var(--brass); }
+.listen-text .cap::before { left: 50%; transform: translateX(-50%); }
+
+@media (max-width: 900px) {
+  .sell { padding-top: 0; }
+  .sell-img { margin: 0 calc(-1 * var(--side)); }
+}

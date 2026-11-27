@@ -2,7 +2,7 @@
   // Header: transparent over the hero photo, solid once you scroll
   var hdr = document.getElementById("hdr");
   var hero = document.getElementById("top");
-  function solid() { hdr.classList.toggle("solid", window.scrollY > hero.offsetHeight - 120); }
+  function solid() { var t = window.innerWidth < 900 ? 40 : hero.offsetHeight - 120; hdr.classList.toggle("solid", window.scrollY > t); }
   window.addEventListener("scroll", solid, { passive: true });
   solid();
 
