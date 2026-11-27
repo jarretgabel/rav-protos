@@ -454,3 +454,12 @@ h1 em, h2 em { color: var(--walnut); }
   .chunks { display: none; }
   .door { min-height: 136px; }
 }
+
+/* Recent homes: a heading above the strip and room below it */
+.homes { padding-bottom: clamp(64px, 7vw, 112px); }
+.homes-head { display: flex; justify-content: space-between; align-items: baseline; gap: 16px; flex-wrap: wrap; padding: clamp(56px, 6vw, 96px) var(--side) clamp(22px, 2.4vw, 34px); }
+.homes-head h2 { font-size: clamp(32px, 3.2vw, 52px); }
+.homes-head .tlink { font-size: 15px; }
+@media (max-width: 560px) {
+  .strip figcaption { left: 8px; bottom: 8px; right: auto; font-size: 8.5px; letter-spacing: .08em; padding: 2px 6px 1px; border-width: 1.5px; }
+}
