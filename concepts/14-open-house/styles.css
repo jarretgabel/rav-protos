@@ -598,24 +598,3 @@ html { scroll-padding-top: var(--oh-hdr); }
   .thumbs { grid-template-columns: repeat(2, 1fr); }
   .where div { grid-template-columns: 1fr; gap: 0; }
 }
-
-/* Vertical breathing room (Nov 27) */
-.oh-cover { padding-block: clamp(40px, 4.6vw, 80px); }
-.room-panel { padding-block: clamp(72px, 8vw, 140px); }
-.room-panel h2 { margin-bottom: 24px; }
-.room-panel > p:not(.room-tag) { margin-bottom: 28px; line-height: 1.7; }
-.svc, .facts { margin-bottom: 32px; }
-.svc a { padding-block: 12px; }
-.facts li { padding-block: 11px; }
-.thumbs { margin-bottom: 34px; }
-.oh-buy { padding-top: clamp(100px, 11vw, 170px); }
-.oh-buy-head { margin-bottom: clamp(40px, 4.4vw, 68px); }
-.bench { padding-top: clamp(72px, 8vw, 128px); }
-.lg-row { padding-block: 17px; }
-.sold { padding-top: 24px; }
-.browse { padding-block: 30px; margin-top: 24px; }
-.proof { padding-block: clamp(88px, 10vw, 160px); }
-.founder { padding-block: clamp(110px, 12vw, 200px); }
-@media (max-width: 900px) {
-  .room-panel { padding-block: 48px 64px; }
-}
