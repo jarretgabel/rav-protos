@@ -224,3 +224,49 @@ em { font-style: italic; }
 @media (prefers-reduced-motion: reduce) {
   *, *::before, *::after { transition: none !important; }
 }
+
+/* =====================================================================
+   Weight and rhythm (Nov 27: "too light, sections run together")
+   Heavier type, darker body text, tighter vertical padding, and
+   alternating paper / linen / walnut bands so each section reads as its own.
+   ===================================================================== */
+:root { --ink-2: #4e463d; --linen: #e6ddcd; }
+h1, h2, h3 { font-weight: 400; }
+.intro h1 { font-weight: 400; }
+.door-t { font-weight: 400; }
+body { color: var(--ink); }
+
+/* tighter verticals */
+.intro { padding-block: clamp(36px, 4vw, 64px); }
+.press { padding-block: clamp(36px, 3.6vw, 56px); background: var(--linen); border-bottom: 0; }
+.press .cap, .pub { color: var(--ink-2); }
+.feature { min-height: 76vh; }
+.feature-text { padding-block: clamp(52px, 5.4vw, 96px); }
+.buy { padding-block: clamp(76px, 8vw, 124px); }
+.preowned { margin-top: clamp(56px, 6vw, 96px); }
+.words { padding-block: clamp(80px, 8vw, 130px); }
+.founder { padding-block: clamp(64px, 7vw, 110px); }
+
+/* Recent homes: a walnut band */
+.homes { background: var(--walnut); color: var(--paper); padding-block: clamp(72px, 7.4vw, 120px); }
+.homes .tlink { color: var(--paper); }
+.homes .tlink:hover { color: var(--champ); }
+.homes h2 em { color: var(--champ); }
+.homes-row figcaption { color: rgba(246,242,235,.85); }
+
+/* Buy on paper; pre-owned on a linen band that runs full width */
+.preowned { margin-left: calc(-1 * var(--side)); margin-right: calc(-1 * var(--side)); padding: clamp(56px, 6vw, 96px) var(--side); background: var(--linen); border-top: 0; }
+.arrivals, .arrivals a { border-color: rgba(27,23,19,.18); }
+.buy { padding-bottom: 0; }
+.buy .fine { padding: 0 0 clamp(40px, 4vw, 64px); margin-top: 0; background: var(--linen); margin-left: calc(-1 * var(--side)); margin-right: calc(-1 * var(--side)); padding-left: var(--side); }
+
+/* Sell on paper (the linen above sets it apart); client words on walnut */
+.sell { background: var(--paper); }
+.words { background: var(--walnut-2); color: var(--paper); }
+.words footer { color: rgba(246,242,235,.75); }
+.words .tlink:hover { color: var(--champ); }
+.words .fine { color: rgba(246,242,235,.6); }
+.founder { border-top: 0; }
+.visit { background: var(--linen); }
+.visit .facts, .visit .facts div { border-color: rgba(27,23,19,.18); }
+.buy .fine { opacity: 1; color: rgba(78,70,61,.75); }
